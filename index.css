@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body:before,
+body:after {
+  content: "";
+  position: fixed;
+  background: hsl(49, 100%, 96%);
+  left: 0;
+  right: 0;
+  height: 8px;
+}
+
+#parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-content {
+  position: relative;
+  display: grid;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-rows: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  height: 100%;
+  padding: 10px;
+  background-image: linear-gradient(
+    16deg,
+    hsl(195, 100%, 95%) calc(50% - 3px),
+    hsl(195, 100%, 85%) calc(50% - 1px)
+  );
+}
+
+.welcome-header {
+  grid-column-start: 4;
+  grid-column-end: span 3;
+  max-width: 600px;
+}
+
+.welcome-head {
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.welcome-para {
+  grid-column-start: 4;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  margin-left: 100px;
+  max-width: 500px;
+  padding-right: 20px;
+}
+
+.welcome-msg {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.welcome-btns-container {
+  grid-column-start: 5;
+  grid-column-end: span 2;
+  grid-row-start: 4;
+}
+
+button {
+  border-radius: 10px;
+  box-shadow: 0 1px 3px hsla(0, 0%, 0%, 0.2);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
+}
+
+.welcome-btn:focus {
+  outline: none;
+}
+
+#proj-btn {
+  background-color: hsl(164, 71%, 34%);
+  color: hsl(164, 94%, 95%);
+  border: none;
+}
+#proj-btn:hover {
+  background-color: hsl(162, 63%, 41%);
+  color: hsl(164, 94%, 98%);
+}
+#proj-btn:focus {
+  background-color: hsl(162, 63%, 41%);
+  color: hsl(164, 94%, 98%);
+}
+
+#rd-map-btn {
+  border: 1px solid hsl(164, 71%, 34%);
+  background-color: hsla(150, 70%, 96%, 0);
+  color: hsl(164, 71%, 34%);
+}
+#rd-map-btn:hover {
+  background-color: hsla(164, 71%, 34%, 0.089);
+  color: hsl(164, 57%, 34%);
+}
+#rd-map-btn:focus {
+  background-color: hsla(164, 71%, 34%, 0.089);
+  border: 1px solid hsl(164, 71%, 34%);
+  color: hsl(164, 57%, 34%);
+}
+
+.contact-form {
+  position: relative;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
+  background-color: hsl(0, 0%, 97%);
+  height: 440px;
+  width: 350px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 7px;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  background-color: hsl(0, 0%, 88%);
+  border: none;
+  border-radius: 3px;
+  font-size: 14px;
+  padding: 5px;
+  resize: none;
+}
+
+#subject {
+  height: 28px;
+}
+
+#message {
+  height: 200px;
+}
+
+#submit-btn {
+  position: absolute;
+  width: 82.4%;
+  bottom: 0;
+}
+
+.roadmap-content {
+  height: 100%;
+  padding: 6px;
+  background-image: linear-gradient(
+    16deg,
+    hsl(195, 100%, 95%) calc(50% - 3px),
+    hsl(195, 100%, 85%) calc(50% - 1px)
+  );
+}
+
+/*
+12
+14
+16
+18
+20
+24
+30
+36
+48
+60
+72
+*/
