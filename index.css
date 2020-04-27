@@ -16,7 +16,7 @@ body:before {
   background: hsl(49, 100%, 96%);
   left: 0;
   right: 0;
-  height: 8px;
+  height: 4px;
 }
 
 #parallax {
