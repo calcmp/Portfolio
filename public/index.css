@@ -116,7 +116,6 @@ button:active {
 /* Form */
 .contact-form {
   border-top: 2px solid hsl(195, 97%, 75%);
-  position: relative;
   grid-column-start: 2;
   grid-row-start: 3;
   box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
@@ -150,12 +149,13 @@ textarea:focus {
   height: 240px;
 }
 #submit-btn {
-  position: absolute;
+  position: relative;
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color: hsl(168, 80%, 23%);
-  width: 100%;
+  width: 350px;
+  margin-left: -30px;
   height: 50px;
   left: 0;
   bottom: 0;

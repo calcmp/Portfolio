@@ -18,8 +18,9 @@ app.post("/send", (req, res) => {
   console.log(email);
   console.log(subject);
   console.log(message);
-  res.redirect("/");
+
   //sendMail(email, subject, message);
+  res.redirect("/");
 });
 
 const port = process.env.PORT || 3000;
