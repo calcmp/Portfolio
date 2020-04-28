@@ -8,7 +8,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script type="text/javascript" src="button-reset.js"></script>
+    <script type="text/javascript" src="public/button-reset.js"></script>
   </head>
   <body>
     <div id="parallax" class="home-content">
@@ -29,7 +29,7 @@
         </p>
       </section>
       <section class="contact-form">
-        <form method="post" action="send">
+        <form id="contact-me" method="post" action="send">
           <textarea
             required
             placeholder="Subject..."
@@ -56,10 +56,20 @@
       </section>
 
       <div class="welcome-btns-container">
-        <button id="proj-btn" class="welcome-btn" type="button">
+        <button
+          id="proj-btn"
+          class="welcome-btn"
+          type="button"
+          onclick="resetColour()"
+        >
           Projects
         </button>
-        <button id="rd-map-btn" class="welcome-btn" type="button">
+        <button
+          id="rd-map-btn"
+          class="welcome-btn"
+          type="button"
+          onclick="resetColour()"
+        >
           My Journey
         </button>
       </div>
