@@ -128,7 +128,7 @@ button:active {
 }
 textarea {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   background-color: hsl(0, 0%, 88%);
   border: none;
   border-radius: 3px;
@@ -140,13 +140,14 @@ textarea {
 textarea:focus {
   outline: none;
 }
+#email,
 #subject {
-  font-size: 18px;
-  height: 34px;
+  font-size: 16px;
+  height: 30px;
 }
 #message {
-  font-size: 14px;
-  height: 260px;
+  font-size: 16px;
+  height: 240px;
 }
 #submit-btn {
   position: absolute;
