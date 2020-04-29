@@ -1,7 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
-const sendMail = require("./mail.js");
+const sendMail = require("./public/scripts/mail.js");
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));

@@ -39,6 +39,7 @@ body:before {
   );
 }
 
+/* Main Content */
 .welcome-header {
   grid-column-start: 4;
   grid-column-end: span 3;
@@ -61,6 +62,7 @@ body:before {
   font-weight: 500;
 }
 
+/* Buttons */
 .welcome-btns-container {
   margin-top: 90px;
   padding-right: 20px;
@@ -175,6 +177,50 @@ textarea:focus {
 }
 #submit-btn:active {
   box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
+}
+
+/* Links */
+.links-container {
+  margin-left: 180px;
+  margin-top: 240px;
+  padding-right: 20px;
+  grid-column-start: 4;
+  grid-column-end: span 3;
+  grid-row-start: 4;
+  grid-row-end: span 2;
+}
+.icon-link {
+  margin-left: 10px;
+}
+.icon-link:first-child {
+  margin-left: 0px;
+}
+.fab {
+  background-color: hsl(162, 63%, 41%);
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.2);
+}
+.cv-dl {
+  background-color: hsl(201, 79%, 46%);
+  margin-right: 60px;
+  border: none;
+  box-shadow: 0 4px 8px hsla(0, 0%, 0%, 0.2);
+  color: white;
+}
+.cv-dl:hover,
+.cv-dl:focus {
+  background-color: hsl(201, 79%, 57%);
+  cursor: pointer;
+  outline: none;
+}
+.cv-dl:active {
+  box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
+}
+a {
+  text-decoration: none;
 }
 
 /* My Journey */

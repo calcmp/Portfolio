@@ -2,12 +2,16 @@
 <html lang="en-us">
   <head>
     <title>Callum Penny - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="public/index.css" />
+    <link rel="stylesheet" type="text/css" href="public/css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
     />
-    <script type="text/javascript" src="public/button-reset.js"></script>
+    <script
+      src="https://kit.fontawesome.com/9554ff5c86.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="public/scripts/button-reset.js"></script>
   </head>
   <body>
     <div id="parallax" class="home-content">
@@ -32,21 +36,18 @@
           <textarea
             required
             placeholder="Subject..."
-            type="text"
             id="subject"
             name="subject"
           ></textarea>
           <textarea
             required
             placeholder="Email address..."
-            type="text"
             id="email"
             name="email"
           ></textarea>
           <textarea
             required
             placeholder="Message..."
-            type="text"
             id="message"
             name="message"
           ></textarea>
@@ -71,6 +72,27 @@
         >
           My Journey
         </button>
+      </div>
+
+      <div class="links-container">
+        <button class="cv-dl" type="button" onclick="resetColour()">
+          Download my CV
+        </button>
+        <a
+          class="icon-link"
+          href="https://www.linkedin.com/in/callum-penny-84883b176/"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a class="icon-link" href="https://github.com/calcmp" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a
+          class="icon-link"
+          href="https://play.google.com/store/apps/developer?id=Callum+Penny&hl=en"
+          target="_blank"
+          ><i class="fab fa-google-play"></i
+        ></a>
       </div>
     </div>
     <div id="parallax" class="roadmap-content"></div>
