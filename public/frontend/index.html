@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="public/frontend/scripts/button-reset.js"></script>
-    <script src="public/frontend/scripts/download-cv.js"></script>
+    <script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
   </head>
   <body>
     <div id="parallax" class="home-content">
@@ -79,9 +79,13 @@
         </button>
       </div>
       <div class="links-container">
-        <button class="cv-dl" type="button" onclick="downloadCV()">
+        <a
+          class="cv-dl"
+          href="public/backend/assets/Callum-Penny-CV.pdf"
+          download
+        >
           Download my CV
-        </button>
+        </a>
         <a
           class="icon-link"
           href="https://www.linkedin.com/in/callum-penny-84883b176/"
