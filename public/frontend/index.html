@@ -2,7 +2,11 @@
 <html lang="en-us">
   <head>
     <title>Callum Penny - Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="public/css/index.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="public/frontend/css/index.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
       rel="stylesheet"
@@ -11,7 +15,8 @@
       src="https://kit.fontawesome.com/9554ff5c86.js"
       crossorigin="anonymous"
     ></script>
-    <script src="public/scripts/button-reset.js"></script>
+    <script src="public/frontend/scripts/button-reset.js"></script>
+    <script src="public/frontend/scripts/download-cv.js"></script>
   </head>
   <body>
     <div id="parallax" class="home-content">
@@ -73,9 +78,8 @@
           My Journey
         </button>
       </div>
-
       <div class="links-container">
-        <button class="cv-dl" type="button" onclick="resetColour()">
+        <button class="cv-dl" type="button" onclick="downloadCV()">
           Download my CV
         </button>
         <a
