@@ -272,7 +272,7 @@ a {
 @media screen and (min-width: 1200px) {
   .main-content {
     margin: auto;
-    padding-left: 340px;
-    padding-right: 340px;
+    padding-left: 300px;
+    padding-right: 300px;
   }
 }
