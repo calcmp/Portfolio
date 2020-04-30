@@ -8,7 +8,7 @@
       href="public/frontend/css/index.css"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto"
       rel="stylesheet"
     />
     <script
@@ -22,19 +22,70 @@
       <section class="welcome-header">
         <h1 class="welcome-head">Hi, I'm Cal</h1>
       </section>
-      <section class="welcome-para">
-        <p class="welcome-msg">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
-        </p>
+
+      <section class="main-content">
+        <section class="welcome-para">
+          <p class="welcome-msg">
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </section>
+        <div class="welcome-btns-container">
+          <button
+            id="proj-btn"
+            class="welcome-btn"
+            type="button"
+            onclick="resetColour()"
+          >
+            Projects
+          </button>
+          <button
+            id="rd-map-btn"
+            class="welcome-btn"
+            type="button"
+            onclick="resetColour()"
+          >
+            My Journey
+          </button>
+        </div>
+
+        <div class="links-container">
+          <a
+            class="icon-link"
+            href="https://www.linkedin.com/in/callum-penny-84883b176/"
+            target="_blank"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="icon-link" href="https://github.com/calcmp" target="_blank"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            class="icon-link"
+            href="https://play.google.com/store/apps/developer?id=Callum+Penny&hl=en"
+            target="_blank"
+            ><i class="fab fa-google-play"></i
+          ></a>
+        </div>
+        <div class="cv-container">
+          <a
+            class="cv-dl"
+            href="public/backend/assets/Callum-Penny-CV.pdf"
+            download
+            onclick="resetColour()"
+          >
+            <i class="fas fa-download"></i>CV
+          </a>
+        </div>
       </section>
+
       <section class="contact-form">
         <form id="contact-me" method="post" action="send">
           <textarea
@@ -58,50 +109,8 @@
           <input id="submit-btn" type="submit" value="SUBMIT" />
         </form>
       </section>
-
-      <div class="welcome-btns-container">
-        <button
-          id="proj-btn"
-          class="welcome-btn"
-          type="button"
-          onclick="resetColour()"
-        >
-          Projects
-        </button>
-        <button
-          id="rd-map-btn"
-          class="welcome-btn"
-          type="button"
-          onclick="resetColour()"
-        >
-          My Journey
-        </button>
-      </div>
-      <div class="links-container">
-        <a
-          class="cv-dl"
-          href="public/backend/assets/Callum-Penny-CV.pdf"
-          download
-        >
-          Download my CV
-        </a>
-        <a
-          class="icon-link"
-          href="https://www.linkedin.com/in/callum-penny-84883b176/"
-          target="_blank"
-          ><i class="fab fa-linkedin-in"></i
-        ></a>
-        <a class="icon-link" href="https://github.com/calcmp" target="_blank"
-          ><i class="fab fa-github"></i
-        ></a>
-        <a
-          class="icon-link"
-          href="https://play.google.com/store/apps/developer?id=Callum+Penny&hl=en"
-          target="_blank"
-          ><i class="fab fa-google-play"></i
-        ></a>
-      </div>
     </div>
+
     <div id="parallax" class="roadmap-content"></div>
   </body>
 </html>
