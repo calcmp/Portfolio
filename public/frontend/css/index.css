@@ -28,12 +28,11 @@ body {
 
 body:before {
   content: "";
-  position: fixed;
   background: hsl(205, 82%, 33%);
-  left: 0;
-  right: 0;
-  height: 6px;
-  overflow: hidden;
+  width: 100%;
+  z-index: 10;
+  height: 8px;
+  position: fixed;
 }
 
 .home-content {
@@ -259,24 +258,19 @@ a {
   padding: 10px;
   background: hsl(0, 0%, 97%);
 }
-.divider {
-  border-left: 6px solid black;
-  height: 200px;
-  position: static;
-  margin: auto;
-}
 .timeline {
+  position: relative;
   margin: 20px auto;
   padding: 10px 0;
   width: 1000px;
 }
 .timeline:before {
-  content: "-";
-  color: hsl(22, 78%, 55%);
-  position: static;
+  content: "";
+  position: absolute;
+  left: 50%;
   width: 2px;
-  max-height: 100%;
-  background: hsl(22, 78%, 55%);
+  height: 100%;
+  background: hsl(0, 0%, 88%);
 }
 .timeline ul {
   margin: 0;
@@ -284,6 +278,7 @@ a {
 }
 .timeline ul li {
   list-style: none;
+  position: relative;
   width: 50%;
   padding: 20px 20px;
   box-sizing: border-box;
@@ -294,14 +289,15 @@ a {
   clear: both;
 }
 .timeline ul li:nth-child(odd):before {
-  content: "----";
-  color: hsl(22, 78%, 55%);
+  content: "";
   position: absolute;
-  margin-right: -27px;
+  top: 24px;
+  right: -6px;
+  width: 10px;
+  height: 10px;
   background: hsl(22, 78%, 55%);
   border-radius: 50%;
   box-shadow: 0 0 0 3px hsla(22, 78%, 55%, 0.219);
-  overflow: hidden;
 }
 .timeline ul li:nth-child(even) {
   float: right;
@@ -309,10 +305,12 @@ a {
   clear: both;
 }
 .timeline ul li:nth-child(even):before {
-  content: "----";
-  color: hsl(22, 78%, 55%);
-  position: static;
-  margin-left: -27px;
+  content: "";
+  position: absolute;
+  top: 24px;
+  left: -4px;
+  width: 10px;
+  height: 10px;
   background: hsl(22, 78%, 55%);
   border-radius: 50%;
   box-shadow: 0 0 0 3px hsla(22, 78%, 55%, 0.219);
@@ -331,10 +329,10 @@ a {
 }
 .timeline ul li p {
   margin: 10px 0 0;
-  padding: 20px 20px;
+  padding: 16px 20px;
   box-shadow: 0 15px 35px hsla(0, 0%, 0%, 0.2);
   background-color: hsl(0, 0%, 97%);
-  border-radius: 30px;
+  border-radius: 4px;
 }
 .timeline ul li:nth-child(odd) p {
   margin-right: 30px;
