@@ -16,6 +16,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="public/frontend/scripts/button-reset.js"></script>
+    <script src="public/frontend/scripts/scroll.js"></script>
   </head>
   <body>
     <div class="home-content">
@@ -43,7 +44,7 @@
             id="proj-btn"
             class="welcome-btn"
             type="button"
-            onclick="resetColour()"
+            onclick="resetColour();"
           >
             Projects
           </button>
@@ -51,12 +52,11 @@
             id="rd-map-btn"
             class="welcome-btn"
             type="button"
-            onclick="resetColour()"
+            onclick="scrollToElement('roadmap'); resetColour();"
           >
             My Journey
           </button>
         </div>
-
         <div class="links-container">
           <a
             class="icon-link"
@@ -111,7 +111,7 @@
       </section-->
     </div>
 
-    <div class="roadmap-content">
+    <div id="roadmap" class="roadmap-content">
       <section class="timeline">
         <ul>
           <li>
