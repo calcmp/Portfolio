@@ -343,6 +343,13 @@ a {
 .timeline ul li:nth-child(even) p {
   margin-left: 30px;
 }
+.timeline ul li:nth-child(odd) img {
+  margin-left: -30px;
+  margin-right: 30px;
+}
+.timeline ul li:nth-child(even) img {
+  margin-left: 30px;
+}
 img {
   max-width: 100%;
   max-height: 500px;
