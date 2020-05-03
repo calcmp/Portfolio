@@ -369,7 +369,7 @@ body:before {
     content: "";
     width: 9px;
     height: 9px;
-    background-color: #bdbdbd;
+    background-color: #b0b0b0;
     border-radius: 9px;
     -webkit-box-shadow: 0px 0px 2px 8px #f7f7f7;
             box-shadow: 0px 0px 2px 8px #f7f7f7;
@@ -388,13 +388,6 @@ body:before {
   margin-bottom: 20px;
 }
 
-.timeline-content p.leader {
-  text-align: center;
-  max-width: 90%;
-  margin: auto;
-  margin-bottom: 45px;
-}
-
 .timeline-content .demo-card-wrapper {
   position: relative;
   margin: auto;
@@ -410,7 +403,7 @@ body:before {
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
     width: 1170px;
-    height: 1160px;
+    height: 1390px;
     margin: 0 auto;
   }
 }
@@ -427,7 +420,7 @@ body:before {
 
 @media (min-width: 1200px) {
   .timeline-content .demo-card-wrapper::after {
-    border-left: 1px solid #bdbdbd;
+    border-left: 1px solid #b0b0b0;
   }
 }
 
@@ -453,7 +446,10 @@ body:before {
     height: 400px;
     margin: 90px;
     margin-top: 45px;
-    margin-bottom: 45px;
+    margin-bottom: 400px;
+  }
+  .demo-card:last-child {
+    margin-bottom: 100px;
   }
   .demo-card:nth-child(odd) {
     margin-right: 45px;
@@ -478,7 +474,7 @@ body:before {
     right: 489.5px;
   }
   .demo-card:nth-child(2) {
-    margin-top: 180px;
+    margin-top: 470px;
   }
 }
 
@@ -545,34 +541,34 @@ body:before {
 }
 
 .demo-card--step1 {
-  background-color: #46b8e9;
+  background-color: #d64343;
 }
 
 .demo-card--step1 .head::after {
-  border-color: #46b8e9;
+  border-color: #d64343;
 }
 
 .demo-card--step2 {
-  background-color: #3ee9d1;
+  background-color: #e67433;
 }
 
 .demo-card--step2 .head::after {
-  border-color: #3ee9d1;
+  border-color: #e67433;
 }
 
 .demo-card--step3 {
-  background-color: #ce43eb;
+  background-color: #56ae5b;
 }
 
 .demo-card--step3 .head::after {
-  border-color: #ce43eb;
+  border-color: #56ae5b;
 }
 
 .demo-card--step4 {
-  background-color: #4d92eb;
+  background-color: #d64343;
 }
 
 .demo-card--step4 .head::after {
-  border-color: #4d92eb;
+  border-color: #d64343;
 }
 /*# sourceMappingURL=index.css.map */
