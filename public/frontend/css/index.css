@@ -450,13 +450,13 @@ body:before {
     margin-bottom: 400px;
   }
   .demo-card:first-child .body {
-    height: 420px;
+    height: 424px;
   }
   .demo-card:last-child {
     margin-bottom: 100px;
   }
   .demo-card:last-child .body {
-    height: 375px;
+    height: 390px;
   }
   .demo-card:nth-child(odd) {
     margin-right: 45px;

@@ -389,12 +389,12 @@ $counter: $items - $rows + 2;
     margin-top: $outer-margin/2;
     margin-bottom: $bottom-margin/2;
     &:first-child .body {
-      height: 420px;
+      height: 424px;
     }
     &:last-child {
       margin-bottom: 100px;
       .body {
-        height: 375px;
+        height: 390px;
       }
     }
     &:nth-child(odd) {
