@@ -44,8 +44,8 @@ $bottom-margin: 800px;
 $marker-size: 9px;
 
 /* Colors */
-$steps: hsl(360, 64%, 55%);
-$colors: hsl(360, 64%, 55%), hsl(22, 78%, 55%), hsl(123, 35%, 51%);
+$steps: hsl(123, 35%, 51%);
+$colors: hsl(123, 35%, 51%), hsl(22, 78%, 55%), hsl(360, 64%, 55%);
 $timeline: hsl(0, 0%, 69%);
 
 /* Timeline calculations */
@@ -342,10 +342,11 @@ $counter: $items - $rows + 2;
   padding: 100px 0;
   background: hsl(0, 0%, 97%);
   h1 {
+    color: hsl(0, 0%, 23%);
     text-align: center;
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 200;
-    margin-bottom: 20px;
+    margin: 0px 60px 100px 60px;
   }
   .demo-card-wrapper {
     position: relative;
@@ -379,7 +380,7 @@ $counter: $items - $rows + 2;
   z-index: 2;
   box-shadow: 0px 0px 2px 8px #f7f7f7;
   @include mq-md {
-    max-width: 40%;
+    max-width: 50%;
   }
   @include mq-lg {
     max-width: $card-width;
@@ -387,8 +388,14 @@ $counter: $items - $rows + 2;
     margin: $outer-margin;
     margin-top: $outer-margin/2;
     margin-bottom: $bottom-margin/2;
+    &:first-child .body {
+      height: 420px;
+    }
     &:last-child {
       margin-bottom: 100px;
+      .body {
+        height: 375px;
+      }
     }
     &:nth-child(odd) {
       margin-right: $outer-margin/2;
@@ -439,9 +446,9 @@ $counter: $items - $rows + 2;
       text-transform: uppercase;
       font-weight: inherit;
       letter-spacing: 2px;
-      margin: 0;
+      margin: 0 10px 0 0;
       padding-bottom: 6px;
-      font-size: 165%;
+      font-size: 24px;
       line-height: 1.2rem;
       span {
         display: block;
@@ -454,18 +461,22 @@ $counter: $items - $rows + 2;
     background: #fff;
     border: 1px solid rgba(191, 191, 191, 0.4);
     border-top: 0;
-    padding: 15px;
+    padding: 5px 15px 15px 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     @include mq-lg {
-      height: $body-height;
+      height: 410px;
     }
     p {
       font-size: 14px;
       line-height: 18px;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
     img {
       display: block;
       width: 100%;
+      &:first-child {
+        border: 1px solid rgba(191, 191, 191, 0.4);
+      }
     }
   }
   @for $i from 1 through $items {
@@ -478,3 +489,32 @@ $counter: $items - $rows + 2;
     }
   }
 }
+
+/* Timeline Animations */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+/*
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: transform 100ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+}
+*/

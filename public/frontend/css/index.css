@@ -382,10 +382,11 @@ body:before {
 }
 
 .timeline-content h1 {
+  color: #3b3b3b;
   text-align: center;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 200;
-  margin-bottom: 20px;
+  margin: 0px 60px 100px 60px;
 }
 
 .timeline-content .demo-card-wrapper {
@@ -436,7 +437,7 @@ body:before {
 
 @media (min-width: 768px) {
   .demo-card {
-    max-width: 40%;
+    max-width: 50%;
   }
 }
 
@@ -448,8 +449,14 @@ body:before {
     margin-top: 45px;
     margin-bottom: 400px;
   }
+  .demo-card:first-child .body {
+    height: 420px;
+  }
   .demo-card:last-child {
     margin-bottom: 100px;
+  }
+  .demo-card:last-child .body {
+    height: 375px;
   }
   .demo-card:nth-child(odd) {
     margin-right: 45px;
@@ -504,9 +511,9 @@ body:before {
   text-transform: uppercase;
   font-weight: inherit;
   letter-spacing: 2px;
-  margin: 0;
+  margin: 0 10px 0 0;
   padding-bottom: 6px;
-  font-size: 165%;
+  font-size: 24px;
   line-height: 1.2rem;
 }
 
@@ -520,19 +527,21 @@ body:before {
   background: #fff;
   border: 1px solid rgba(191, 191, 191, 0.4);
   border-top: 0;
-  padding: 15px;
+  padding: 5px 15px 15px 15px;
+  -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 1200px) {
   .demo-card .body {
-    height: 315px;
+    height: 410px;
   }
 }
 
 .demo-card .body p {
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .demo-card .body img {
@@ -540,12 +549,16 @@ body:before {
   width: 100%;
 }
 
+.demo-card .body img:first-child {
+  border: 1px solid rgba(191, 191, 191, 0.4);
+}
+
 .demo-card--step1 {
-  background-color: #d64343;
+  background-color: #56ae5b;
 }
 
 .demo-card--step1 .head::after {
-  border-color: #d64343;
+  border-color: #56ae5b;
 }
 
 .demo-card--step2 {
@@ -557,18 +570,49 @@ body:before {
 }
 
 .demo-card--step3 {
-  background-color: #56ae5b;
-}
-
-.demo-card--step3 .head::after {
-  border-color: #56ae5b;
-}
-
-.demo-card--step4 {
   background-color: #d64343;
 }
 
-.demo-card--step4 .head::after {
+.demo-card--step3 .head::after {
   border-color: #d64343;
 }
+
+.demo-card--step4 {
+  background-color: #56ae5b;
+}
+
+.demo-card--step4 .head::after {
+  border-color: #56ae5b;
+}
+
+/* Timeline Animations */
+.fade-in {
+  opacity: 0;
+  -webkit-transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+/*
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: transform 100ms ease-in;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+}
+*/
 /*# sourceMappingURL=index.css.map */

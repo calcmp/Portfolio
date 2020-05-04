@@ -52,7 +52,7 @@
             id="rd-map-btn"
             class="welcome-btn"
             type="button"
-            onclick="scrollToElement('roadmap'); resetColour();"
+            onclick="scrollToElement('timeline'); resetColour();"
           >
             My Journey
           </button>
@@ -110,48 +110,51 @@
         </form>
       </section-->
     </div>
-
-    <section class="timeline-content">
+    <section id="timeline" class="timeline-content">
       <h1>From University to Now</h1>
       <div class="demo-card-wrapper">
-        <div class="demo-card demo-card--step1">
+        <div class="demo-card demo-card--step1 fade-in">
           <div class="head">
             <div class="number-box">
               <span>01</span>
             </div>
-            <h2>
-              <span class="small">University Module, HTML, CSS</span> Responsive
-              Website
-            </h2>
+            <h2><span class="small">HTML, CSS</span> Responsive Site</h2>
           </div>
           <div class="body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              reiciendis deserunt doloribus consequatur, laudantium odio dolorum
-              laboriosam.
+              Creating a responsive website related and adhering to accesibility
+              standards was part of one of the modules during my university
+              course. The module was purely about using CSS media queries to
+              implement responsiveness and accessibility.
             </p>
-            <img src="/public/frontend/assets/uni.PNG" alt="Graphic" />
+            <a href="https://responsive-lanc.netlify.app/" target="_blank"
+              ><img src="/public/frontend/assets/uni.PNG" alt="Graphic"
+            /></a>
           </div>
         </div>
 
-        <div class="demo-card demo-card--step2">
+        <div id="card2" class="demo-card demo-card--step2 fade-in">
           <div class="head">
             <div class="number-box">
               <span>02</span>
             </div>
-            <h2><span class="small">ReactJS</span> Todo List</h2>
+            <h2><span class="small">ReactJS</span> TDEE Calculator</h2>
           </div>
           <div class="body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              reiciendis deserunt doloribus consequatur, laudantium odio dolorum
-              laboriosam.
+              Wanting to get my hands into a framework and fitness being
+              important to me meant only one thing; it was time to create a TDEE
+              calculator while learning ReactJS.
             </p>
-            <img src="/public/frontend/assets/tdee-reactjs.PNG" alt="Graphic" />
+            <a href="https://tdee-calc.netlify.app/" target="_blank"
+              ><img
+                src="/public/frontend/assets/tdee-reactjs.PNG"
+                alt="Graphic"
+            /></a>
           </div>
         </div>
 
-        <div class="demo-card demo-card--step3">
+        <div class="demo-card demo-card--step3 fade-in">
           <div class="head">
             <div class="number-box">
               <span>03</span>
@@ -160,14 +163,19 @@
           </div>
           <div class="body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
-              reiciendis deserunt doloribus consequatur, laudantium odio dolorum
-              laboriosam.
+              The latest project, Demoed. An app targetted at musicians to
+              record and share demos for their songs. The app makes use of Redux
+              and the phones local storage as well as recording and playback.
             </p>
-            <img src="http://placehold.it/1000x500" alt="Graphic" />
+            <a
+              href="https://play.google.com/store/apps/details?id=com.donefreshly.demoed&hl=en"
+              target="_blank"
+              ><img src="/public/frontend/assets/demoed.PNG" alt="Graphic"
+            /></a>
           </div>
         </div>
       </div>
     </section>
+    <script src="public/frontend/scripts/observer.js"></script>
   </body>
 </html>
