@@ -515,7 +515,6 @@ $counter: $items - $rows + 2;
 .projects-container {
   padding: 100px 0;
   background: hsl(0, 0%, 97%);
-
   .proj-card-wrapper {
     height: 100%;
     padding: 100px 51.5px 20px 51.5px;
@@ -525,6 +524,9 @@ $counter: $items - $rows + 2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include mq-900 {
+      margin: 60px auto;
+    }
   }
 }
 .project-card {
@@ -532,35 +534,16 @@ $counter: $items - $rows + 2;
   display: block;
   height: 340px;
   margin: 20px 70px;
-  max-width: 400px;
-  width: 400px;
+  max-width: 1000px;
+  width: 1000px;
   border: 1px solid black;
-  &:nth-child(odd) {
-    @include mq-900 {
-      margin: 20px 30px 20px 0;
-    }
-    @include mq-lg {
-      margin: 20px 70px 20px 0;
-    }
-  }
-  &:nth-child(even) {
-    @include mq-900 {
-      margin: 20px 0 20px 30px;
-    }
-    @include mq-lg {
-      margin: 20px 0 20px 70px;
-    }
-  }
-  @include mq-md {
-    margin: 20px 20px;
-    height: 300px;
-    max-width: 360px;
-    width: 360px;
-  }
-  @include mq-lg {
-    height: 340px;
-    max-width: 400px;
-    width: 400px;
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: -22px;
+    border: 0.2px solid grey;
   }
 }
 

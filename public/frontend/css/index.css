@@ -621,55 +621,29 @@ body:before {
           justify-content: center;
 }
 
+@media (min-width: 900px) {
+  .projects-container .proj-card-wrapper {
+    margin: 60px auto;
+  }
+}
+
 .project-card {
   position: relative;
   display: block;
   height: 340px;
   margin: 20px 70px;
-  max-width: 400px;
-  width: 400px;
+  max-width: 1000px;
+  width: 1000px;
   border: 1px solid black;
 }
 
-@media (min-width: 900px) {
-  .project-card:nth-child(odd) {
-    margin: 20px 30px 20px 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card:nth-child(odd) {
-    margin: 20px 70px 20px 0;
-  }
-}
-
-@media (min-width: 900px) {
-  .project-card:nth-child(even) {
-    margin: 20px 0 20px 30px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card:nth-child(even) {
-    margin: 20px 0 20px 70px;
-  }
-}
-
-@media (min-width: 768px) {
-  .project-card {
-    margin: 20px 20px;
-    height: 300px;
-    max-width: 360px;
-    width: 360px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card {
-    height: 340px;
-    max-width: 400px;
-    width: 400px;
-  }
+.project-card:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: -22px;
+  border: 0.2px solid grey;
 }
 
 .from-below {
