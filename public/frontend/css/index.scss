@@ -20,6 +20,12 @@ font sizes
   }
 }
 
+@mixin mq-900 {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
 @mixin mq-lg {
   @media (min-width: 1200px) {
     @content;
@@ -393,6 +399,11 @@ $counter: $items - $rows + 2;
   max-width: 60%;
   z-index: 2;
   box-shadow: 0px 0px 2px 8px #f7f7f7;
+  &:first-child {
+    img {
+      border: 1px solid rgba(191, 191, 191, 0.4);
+    }
+  }
   @include mq-md {
     max-width: 50%;
   }
@@ -488,9 +499,6 @@ $counter: $items - $rows + 2;
     img {
       display: block;
       width: 100%;
-      &:first-child {
-        border: 1px solid rgba(191, 191, 191, 0.4);
-      }
     }
   }
   @for $i from 1 through $items {
@@ -505,23 +513,54 @@ $counter: $items - $rows + 2;
 }
 
 .projects-container {
-  height: 100%;
-  padding: 100px 80px 20px 80px;
-  margin: auto;
-  width: 1400px;
+  padding: 100px 0;
   background: hsl(0, 0%, 97%);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
-  .project-card {
-    position: relative;
-    display: block;
-    margin: 20px 70px;
-    height: 40%;
+  .proj-card-wrapper {
+    height: 100%;
+    padding: 100px 51.5px 20px 51.5px;
+    max-width: 1400px;
+    margin: auto;
+    background: hsl(0, 0%, 97%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.project-card {
+  position: relative;
+  display: block;
+  height: 340px;
+  margin: 20px 70px;
+  max-width: 400px;
+  width: 400px;
+  border: 1px solid black;
+  &:nth-child(odd) {
+    @include mq-900 {
+      margin: 20px 30px 20px 0;
+    }
+    @include mq-lg {
+      margin: 20px 70px 20px 0;
+    }
+  }
+  &:nth-child(even) {
+    @include mq-900 {
+      margin: 20px 0 20px 30px;
+    }
+    @include mq-lg {
+      margin: 20px 0 20px 70px;
+    }
+  }
+  @include mq-md {
+    margin: 20px 20px;
+    height: 300px;
+    max-width: 360px;
+    width: 360px;
+  }
+  @include mq-lg {
+    height: 340px;
     max-width: 400px;
     width: 400px;
-    border: 1px solid black;
   }
 }
 
