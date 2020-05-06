@@ -600,6 +600,24 @@ body:before {
   border-color: #56ae5b;
 }
 
+/* My Projects */
+/* Transitions */
+.from-below {
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  -webkit-transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  transition: opacity 400ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-below.appear {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  opacity: 1;
+}
+
 .projects-container {
   padding: 100px 0;
   background: #f7f7f7;
@@ -632,33 +650,44 @@ body:before {
   display: block;
   height: 340px;
   margin: 20px 70px;
-  max-width: 1000px;
-  width: 1000px;
+  max-width: 1400px;
+  width: 1400px;
   border: 1px solid black;
 }
 
-.project-card:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
+.project-card .img-container {
+  position: relative;
+  height: 100%;
+  float: left;
+}
+
+.project-card:nth-child(even) .img-container {
+  float: right;
+}
+
+.project-card:first-child img {
+  position: relative;
+  height: 80%;
+  margin-left: -14px;
+  margin-top: 30px;
+}
+
+.project-card.right img {
+  height: 100%;
+}
+
+.project-card img {
+  position: relative;
+  height: 100%;
+  margin: 0 20px;
+  -webkit-filter: drop-shadow(0 5px 5px #222);
+          filter: drop-shadow(0 5px 5px #222);
+}
+
+.solid {
   width: 100%;
-  margin-bottom: -22px;
-  border: 0.2px solid grey;
-}
-
-.from-below {
-  -webkit-transform: translateY(50%);
-          transform: translateY(50%);
-  -webkit-transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 400ms ease-in, -webkit-transform 400ms ease-in;
-  transition: opacity 400ms ease-in, transform 400ms ease-in;
-  transition: opacity 400ms ease-in, transform 400ms ease-in, -webkit-transform 400ms ease-in;
-  opacity: 0;
-}
-
-.from-below.appear {
-  -webkit-transform: translateX(0);
-          transform: translateX(0);
-  opacity: 1;
+  float: left;
+  border: none;
+  border-bottom: 1px solid #cfcfcf;
 }
 /*# sourceMappingURL=index.css.map */
