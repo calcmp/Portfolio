@@ -652,7 +652,6 @@ body:before {
   margin: 20px 70px;
   max-width: 1400px;
   width: 1400px;
-  border: 1px solid black;
 }
 
 .project-card .img-container {
@@ -680,11 +679,30 @@ body:before {
   position: relative;
   height: 100%;
   margin: 0 20px;
-  -webkit-filter: drop-shadow(0 5px 5px #222);
-          filter: drop-shadow(0 5px 5px #222);
+  -webkit-filter: drop-shadow(0 5px 5px #616161);
+          filter: drop-shadow(0 5px 5px #616161);
 }
 
-.solid {
+.project-card .desc-container {
+  height: 100%;
+  width: 50%;
+  padding: 20px 36px;
+}
+
+.project-card .desc-container p {
+  font-size: 24px;
+  color: #525252;
+}
+
+.project-card .desc-container .title {
+  color: #3b3b3b;
+}
+
+.project-card:nth-child(odd) .desc-container {
+  float: right;
+}
+
+.project-card hr.solid {
   width: 100%;
   float: left;
   border: none;

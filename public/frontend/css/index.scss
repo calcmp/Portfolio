@@ -548,14 +548,17 @@ $counter: $items - $rows + 2;
   margin: 20px 70px;
   max-width: 1400px;
   width: 1400px;
-  border: 1px solid black;
+  //border: 1px solid black;
   .img-container {
     position: relative;
     height: 100%;
     float: left;
+    //border: 1px solid grey;
   }
-  &:nth-child(even) .img-container {
-    float: right;
+  &:nth-child(even) {
+    .img-container {
+      float: right;
+    }
   }
   &:first-child {
     img {
@@ -572,8 +575,28 @@ $counter: $items - $rows + 2;
     position: relative;
     height: 100%;
     margin: 0 20px;
-    filter: drop-shadow(0 5px 5px hsl(0, 0%, 38%);
+    filter: drop-shadow(0 5px 5px hsl(0, 0%, 38%));
   }
+  .desc-container {
+    height: 100%;
+    width: 50%;
+    padding: 20px 36px;
+    //border: 1px solid crimson;
+    p {
+      font-size: 24px;
+      color: hsl(0, 0%, 32%);
+    }
+    .title {
+      //font-weight: 600;
+      color: hsl(0, 0%, 23%);
+    }
+  }
+  &:nth-child(odd) {
+    .desc-container {
+      float: right;
+    }
+  }
+
   hr.solid {
     width: 100%;
     float: left;
