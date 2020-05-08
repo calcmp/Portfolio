@@ -139,8 +139,8 @@ body:before {
 .main-container .welcome-btns-container #proj-btn:hover, .main-container .welcome-btns-container #proj-btn:focus {
   border: 1px solid #e9b949;
   background-color: #e9b949;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 .main-container .welcome-btns-container #rd-map-btn {
@@ -160,8 +160,8 @@ body:before {
 
 .main-container .welcome-btns-container #rd-map-btn:hover, .main-container .welcome-btns-container #rd-map-btn:focus {
   background-color: #00508a;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* Form */
@@ -179,7 +179,7 @@ body:before {
   border-radius: 0px;
   padding: 34px 30px;
   margin-top: 100px;
-  display: block;
+  display: none;
   position: fixed;
   bottom: 23px;
   right: 50px;
@@ -244,8 +244,8 @@ body:before {
 }
 
 .contact-form #submit-btn:hover, .contact-form #submit-btn:focus {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   background-color: #00538f;
   cursor: pointer;
 }
@@ -271,8 +271,8 @@ body:before {
 }
 
 .open-button:hover, .open-button:active {
-  -webkit-transition: 200ms;
-  transition: 200ms;
+  -webkit-transition: 250ms;
+  transition: 250ms;
   opacity: 1;
 }
 
@@ -282,14 +282,14 @@ body:before {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border-color: #0f6099;
-  border-bottom: none;
-  border-left: none;
+  border: none;
   position: relative;
   float: right;
   margin-top: -56px;
   margin-right: -50px;
   font-size: 20px;
+  -webkit-box-shadow: 0 2px 16px grey;
+          box-shadow: 0 2px 16px grey;
   cursor: pointer;
 }
 
@@ -381,8 +381,8 @@ body:before {
   background-color: #00538f;
   cursor: pointer;
   outline: none;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
 }
 
 /* My Journey */
@@ -565,34 +565,29 @@ body:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
+  background-color: #1870af;
+  color: white;
   font-weight: 400;
-}
-
-.demo-card .head .number-box {
-  display: inline;
-  margin: 15px;
-  padding: 10px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 600;
-  background: rgba(0, 0, 0, 0.17);
+  height: 70px;
+  padding: 0 40px;
 }
 
 .demo-card .head h2 {
   text-transform: uppercase;
   font-weight: inherit;
   letter-spacing: 2px;
-  margin: 0 10px 0 0;
-  padding-bottom: 6px;
   font-size: 24px;
   line-height: 1.2rem;
 }
 
-.demo-card .head h2 span {
+.demo-card .head span {
   display: block;
   font-size: 0.6rem;
   margin: 0;
+}
+
+.demo-card .head:after {
+  color: #1870af;
 }
 
 .demo-card .body {
@@ -619,38 +614,6 @@ body:before {
 .demo-card .body img {
   display: block;
   width: 100%;
-}
-
-.demo-card--step1 {
-  background-color: #56ae5b;
-}
-
-.demo-card--step1 .head::after {
-  border-color: #56ae5b;
-}
-
-.demo-card--step2 {
-  background-color: #e67433;
-}
-
-.demo-card--step2 .head::after {
-  border-color: #e67433;
-}
-
-.demo-card--step3 {
-  background-color: #d64343;
-}
-
-.demo-card--step3 .head::after {
-  border-color: #d64343;
-}
-
-.demo-card--step4 {
-  background-color: #56ae5b;
-}
-
-.demo-card--step4 .head::after {
-  border-color: #56ae5b;
 }
 
 /* My Projects */

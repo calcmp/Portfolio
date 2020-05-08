@@ -20,7 +20,9 @@
     <script src="public/frontend/scripts/handle-form.js"></script>
   </head>
   <body>
-    <button class="open-button" onclick="openForm()"><i class="fas fa-sticky-note"></i></button>
+    <button class="open-button" onclick="openForm()">
+      <i class="fas fa-sticky-note"></i>
+    </button>
     <section class="contact-form" id="contact-form">
       <form id="contact-me" method="post" action="send">
         <button class="close-button" onclick="closeForm()">
@@ -44,7 +46,12 @@
           id="message"
           name="message"
         ></textarea>
-        <input id="submit-btn" type="submit" value="SUBMIT" onclick="closeForm()"/>
+        <input
+          id="submit-btn"
+          type="submit"
+          value="SUBMIT"
+          onclick="closeForm()"
+        />
       </form>
     </section>
 
@@ -120,9 +127,6 @@
       <div class="demo-card-wrapper">
         <div class="demo-card demo-card--step1 fade-in">
           <div class="head">
-            <div class="number-box">
-              <span>01</span>
-            </div>
             <h2><span class="small">HTML, CSS</span> Responsive Site</h2>
           </div>
           <div class="body">
@@ -143,9 +147,6 @@
 
         <div id="card2" class="demo-card demo-card--step2 fade-in">
           <div class="head">
-            <div class="number-box">
-              <span>02</span>
-            </div>
             <h2><span class="small">ReactJS</span> TDEE Calculator</h2>
           </div>
           <div class="body">
@@ -165,9 +166,6 @@
 
         <div class="demo-card demo-card--step3 fade-in">
           <div class="head">
-            <div class="number-box">
-              <span>03</span>
-            </div>
             <h2><span class="small">React Native, Redux</span> Demoed</h2>
           </div>
           <div class="body">
@@ -194,15 +192,19 @@
         <div id="p-card1" class="project-card slide-in from-below">
           <div class="img-container">
             <img
-                src="/public/frontend/assets/tdee-proj.PNG"
-                loading="lazy"
-                alt="Graphic"
+              src="/public/frontend/assets/tdee-proj.PNG"
+              loading="lazy"
+              alt="Graphic"
             />
           </div>
           <div class="desc-container">
             <p>
-              <span class="title">TDEE Calculator</span> 
-               what is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+              <span class="title">TDEE Calculator</span>
+              what is Lorem Ipsum Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book it has?
             </p>
             <div class="desc-footer">
               <p>
@@ -233,14 +235,20 @@
           <div class="desc-container">
             <p>
               <span class="title">TDEE Calculator</span>
-               what is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+              what is Lorem Ipsum Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book it has?
             </p>
             <div class="desc-footer">
               <p>
                 <span class="tech-title">Tech://</span>
                 React-Native, Expo
               </p>
-              <a href="https://play.google.com/store/apps/details?id=com.callumpenny.tdeecalculator">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.callumpenny.tdeecalculator"
+              >
                 view me
               </a>
             </div>
@@ -263,15 +271,21 @@
           </div>
           <div class="desc-container">
             <p>
-              <span class="title">Flashcards</span> 
-              what is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+              <span class="title">Flashcards</span>
+              what is Lorem Ipsum Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book it has?
             </p>
             <div class="desc-footer">
               <p>
                 <span class="tech-title">Tech://</span>
                 React-Native, Redux, Expo
               </p>
-              <a href="https://play.google.com/store/apps/details?id=com.callumpenny.flashcard">
+              <a
+                href="https://play.google.com/store/apps/details?id=com.callumpenny.flashcard"
+              >
                 view me
               </a>
             </div>
@@ -295,7 +309,11 @@
           <div class="desc-container">
             <p>
               <span class="title">Demoed</span>
-               what is Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry's standard dummy text ever since the 1500s when an unknown printer took a galley of type and scrambled it to make a type specimen book it has?
+              what is Lorem Ipsum Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s when an
+              unknown printer took a galley of type and scrambled it to make a
+              type specimen book it has?
             </p>
             <div class="desc-footer">
               <p>
