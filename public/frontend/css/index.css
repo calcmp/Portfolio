@@ -82,7 +82,7 @@ body:before {
 }
 
 .main-container .welcome-btns-container {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -157,7 +157,7 @@ body:before {
 }
 
 .main-container .links-container {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +202,7 @@ body:before {
 }
 
 .main-container .cv-container {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -242,7 +242,7 @@ body:before {
 }
 
 .main-container .skills {
-  margin-top: 70px;
+  margin-top: 120px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +256,7 @@ body:before {
 
 .main-container .skills .tag {
   height: 30px;
-  margin: 4px 6px;
+  margin: 6px 6px;
   padding: 0 10px 0 10px;
   background-color: #f7f7f7;
   border-radius: 20px;
@@ -277,11 +277,7 @@ body:before {
 
 /* Form */
 .contact-form {
-  border-top: 4px solid #0f6099;
-  -ms-grid-column: 2;
-      grid-column-start: 2;
-  -ms-grid-row: 3;
-      grid-row-start: 3;
+  border-left: 4px solid #0f6099;
   -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   background-color: #f7f7f7;
@@ -339,7 +335,7 @@ body:before {
   margin-left: -30px;
   margin-top: 6px;
   height: 50px;
-  left: 0;
+  left: -4px;
   bottom: 0;
   font-weight: 500;
   font-size: 18px;
@@ -388,7 +384,7 @@ body:before {
 }
 
 .close-button {
-  color: #bb2525;
+  color: #616161;
   background-color: #f7f7f7;
   width: 40px;
   height: 40px;
@@ -396,11 +392,9 @@ body:before {
   border: none;
   position: relative;
   float: right;
-  margin-top: -56px;
-  margin-right: -50px;
+  margin-top: -46px;
+  margin-right: -40px;
   font-size: 20px;
-  -webkit-box-shadow: 0 2px 16px grey;
-          box-shadow: 0 2px 16px grey;
   cursor: pointer;
 }
 
