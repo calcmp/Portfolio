@@ -95,6 +95,7 @@ body:before {
     hsl(0, 0%, 97%) calc(50% - 3px),
     hsl(205, 100%, 21%) calc(50% - 2px)
   );
+  margin-bottom: 100px;
 }
 
 /* Header */
@@ -109,20 +110,14 @@ body:before {
   margin: auto;
   padding-left: 50px;
   padding-right: 50px;
-  @include mq-md {
-    margin: auto;
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  @include mq-lg {
-    margin: auto;
-    padding-left: 300px;
-    padding-right: 300px;
-  }
   .welcome-msg {
     font-size: 16px;
     font-weight: 500;
     color: hsl(205, 2%, 96%);
+    @include mq-lg {
+      margin: auto;
+      width: 1000px;
+    }
   }
 
   /* Buttons */
@@ -176,6 +171,88 @@ body:before {
       &:focus {
         background-color: hsl(205, 100%, 27%);
         transition: 0.25s;
+      }
+    }
+  }
+  .links-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .icon-link {
+      margin-left: 40px;
+      &:first-child {
+        margin-left: 0px;
+      }
+    }
+    .fa-google-play {
+      background-color: hsl(360, 64%, 55%);
+    }
+    .fa-github {
+      background-color: hsl(0, 0%, 23%);
+    }
+    .fa-linkedin-in {
+      background-color: hsl(205, 65%, 55%);
+    }
+    .fab {
+      color: white;
+      padding: 16px;
+      border-radius: 40px;
+      font-size: 20px;
+    }
+    .fas {
+      margin-right: 10px;
+    }
+    a {
+      text-decoration: none;
+    }
+  }
+  .cv-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    .cv-dl {
+      background-color: hsl(205, 100%, 21%);
+      border: 1px solid hsl(42, 63%, 48%);
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      color: white;
+      border-radius: 0px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-weight: 500;
+      padding: 15px 20px;
+      font-size: 20px;
+      &:active {
+        box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
+        transition: 0s;
+      }
+      &:hover,
+      &:focus {
+        background-color: hsl(205, 100%, 28%);
+        cursor: pointer;
+        outline: none;
+        transition: 0.25s;
+      }
+    }
+  }
+  .skills {
+    margin-top: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .tag {
+      height: 30px;
+      margin: 4px 6px;
+      padding: 0 10px 0 10px;
+      background-color: hsl(0, 0%, 97%);
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 1px 8px grey;
+      p {
+        color: black;
+        font-size: 14px;
       }
     }
   }
@@ -292,71 +369,6 @@ body:before {
   p {
     color: white;
     margin-top: -2px;
-  }
-}
-
-/* Links */
-.links-container {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  .icon-link {
-    margin-left: 40px;
-    &:first-child {
-      margin-left: 0px;
-    }
-  }
-  .fa-google-play {
-    background-color: hsl(360, 64%, 55%);
-  }
-  .fa-github {
-    background-color: hsl(0, 0%, 23%);
-  }
-  .fa-linkedin-in {
-    background-color: hsl(205, 65%, 55%);
-  }
-  .fab {
-    color: white;
-    padding: 16px;
-    border-radius: 40px;
-    font-size: 20px;
-  }
-  .fas {
-    margin-right: 10px;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-
-/* CV */
-.cv-container {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  .cv-dl {
-    background-color: hsl(205, 100%, 21%);
-    border: 1px solid hsl(42, 63%, 48%);
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    color: white;
-    border-radius: 0px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-weight: 500;
-    padding: 15px 20px;
-    font-size: 20px;
-    &:active {
-      box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
-      transition: 0s;
-    }
-    &:hover,
-    &:focus {
-      background-color: hsl(205, 100%, 28%);
-      cursor: pointer;
-      outline: none;
-      transition: 0.25s;
-    }
   }
 }
 
