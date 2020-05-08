@@ -179,10 +179,10 @@ body:before {
   border-radius: 0px;
   padding: 34px 30px;
   margin-top: 100px;
-  display: none;
+  display: block;
   position: fixed;
   bottom: 23px;
-  right: 28px;
+  right: 50px;
   z-index: 9;
 }
 
@@ -250,6 +250,10 @@ body:before {
   cursor: pointer;
 }
 
+.fa-sticky-note {
+  font-size: 24px;
+}
+
 .open-button {
   background-color: #525252;
   color: white;
@@ -258,8 +262,8 @@ body:before {
   opacity: 0.8;
   position: fixed;
   bottom: 19.5px;
-  right: 28px;
-  width: 350px;
+  right: 50px;
+  width: 50px;
   z-index: 9;
   height: 50px;
   font-weight: 500;
@@ -275,11 +279,16 @@ body:before {
 .close-button {
   color: #bb2525;
   background-color: #f7f7f7;
-  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-color: #0f6099;
+  border-bottom: none;
+  border-left: none;
   position: relative;
   float: right;
-  margin-top: -34px;
-  margin-right: -30px;
+  margin-top: -56px;
+  margin-right: -50px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -436,7 +445,7 @@ body:before {
 }
 
 .timeline-container {
-  padding: 100px 0;
+  padding: 100px 0 10px 0;
   background: #f7f7f7;
 }
 
