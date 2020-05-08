@@ -117,43 +117,31 @@ body:before {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   background-color: #c8992d;
-  border: 1px solid #c8992d;
+  border: none;
   color: white;
 }
 
 .main-container .welcome-btns-container #proj-btn:active {
   -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
           box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 .main-container .welcome-btns-container #proj-btn:hover, .main-container .welcome-btns-container #proj-btn:focus {
-  border: 1px solid #e9b949;
   background-color: #e9b949;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
 .main-container .welcome-btns-container #rd-map-btn {
-  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  border: 1px solid #c8992d;
-  background-color: #003e6b;
-  color: #f7d06e;
-}
-
-.main-container .welcome-btns-container #rd-map-btn:active {
-  -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-          box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  -webkit-transition: 0s;
-  transition: 0s;
+  border: none;
+  background-color: #0a558a;
+  color: white;
 }
 
 .main-container .welcome-btns-container #rd-map-btn:hover, .main-container .welcome-btns-container #rd-map-btn:focus {
-  background-color: #00508a;
   -webkit-transition: 0.25s;
   transition: 0.25s;
+  background-color: #1a76b7;
 }
 
 .main-container .links-container {
@@ -213,7 +201,6 @@ body:before {
 
 .main-container .cv-container .cv-dl {
   background-color: #003e6b;
-  border: 1px solid #c8992d;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   color: white;
@@ -229,8 +216,6 @@ body:before {
 .main-container .cv-container .cv-dl:active {
   -webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
           box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
-  -webkit-transition: 0s;
-  transition: 0s;
 }
 
 .main-container .cv-container .cv-dl:hover, .main-container .cv-container .cv-dl:focus {
@@ -266,8 +251,8 @@ body:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-shadow: 0 1px 8px grey;
-          box-shadow: 0 1px 8px grey;
+  -webkit-box-shadow: 0 1px 2px grey;
+          box-shadow: 0 1px 2px grey;
 }
 
 .main-container .skills .tag p {
@@ -288,7 +273,7 @@ body:before {
   margin-top: 100px;
   display: none;
   position: fixed;
-  bottom: 23px;
+  bottom: 18px;
   right: 50px;
   z-index: 9;
 }

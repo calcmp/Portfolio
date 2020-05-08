@@ -145,32 +145,25 @@ body:before {
       margin-right: 20px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       background-color: hsl(42, 63%, 48%);
-      border: 1px solid hsl(42, 63%, 48%);
+      border: none;
       color: white;
       &:active {
         box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
-        transition: 0s;
       }
       &:hover,
       &:focus {
-        border: 1px solid hsl(42, 78%, 60%);
         background-color: hsl(42, 78%, 60%);
         transition: 0.25s;
       }
     }
     #rd-map-btn {
-      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-      border: 1px solid hsl(42, 63%, 48%);
-      background-color: hsl(205, 100%, 21%);
-      color: hsl(43, 89%, 70%);
-      &:active {
-        box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
-        transition: 0s;
-      }
+      border: none;
+      background-color: hsl(205, 87%, 29%);
+      color: white;
       &:hover,
       &:focus {
-        background-color: hsl(205, 100%, 27%);
         transition: 0.25s;
+        background-color: hsl(205, 75%, 41%);
       }
     }
   }
@@ -212,7 +205,6 @@ body:before {
     justify-content: center;
     .cv-dl {
       background-color: hsl(205, 100%, 21%);
-      border: 1px solid hsl(42, 63%, 48%);
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       color: white;
       border-radius: 0px;
@@ -224,7 +216,6 @@ body:before {
       font-size: 20px;
       &:active {
         box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
-        transition: 0s;
       }
       &:hover,
       &:focus {
@@ -249,7 +240,7 @@ body:before {
       border-radius: 20px;
       display: flex;
       align-items: center;
-      box-shadow: 0 1px 8px grey;
+      box-shadow: 0 1px 2px grey;
       p {
         color: black;
         font-size: 14px;
@@ -270,7 +261,7 @@ body:before {
   margin-top: 100px;
   display: none;
   position: fixed;
-  bottom: 23px;
+  bottom: 18px;
   right: 50px;
   z-index: 9;
   textarea {
@@ -352,7 +343,7 @@ body:before {
 }
 .close-button {
   color: hsl(0, 0%, 38%);
-  background-color: #f7f7f7;
+  background-color: rgb(247, 247, 247);
   width: 40px;
   height: 40px;
   border-radius: 50%;
