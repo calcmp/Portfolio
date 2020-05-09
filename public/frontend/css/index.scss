@@ -227,7 +227,7 @@ body:before {
     }
   }
   .skills {
-    margin-top: 120px;
+    margin-top: 80px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -264,7 +264,8 @@ body:before {
   bottom: 18px;
   right: 50px;
   z-index: 9;
-  textarea {
+  textarea,
+  input {
     width: 100%;
     margin-bottom: 16px;
     background-color: hsl(0, 0%, 88%);
@@ -278,13 +279,10 @@ body:before {
       outline: none;
     }
   }
-  #subject {
-    margin-top: -4px;
-  }
   #email,
   #subject {
     font-size: 16px;
-    height: 30px;
+    height: 31px;
   }
   #message {
     font-size: 16px;
@@ -306,7 +304,7 @@ body:before {
     font-size: 18px;
     color: white;
     outline: none;
-    box-shadow: 0 2px 2px rbga(0, 0, 0, 0.1);
+    box-shadow: 0 3px 8px rbga(0, 0, 0, 0.1);
     &:active {
       box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
     }
@@ -580,12 +578,20 @@ $counter: $items - $rows + 2;
   margin: 50px 70px 40px 70px;
   max-width: 1400px;
   width: 1400px;
-  //border: 1px solid black;
+  @include mq-md {
+    margin: 50px 70px 40px 70px;
+  }
+  @include mq-lg {
+    position: relative;
+    display: block;
+    margin: 50px 70px 40px 70px;
+  }
   .img-container {
+    display: flex;
+    flex-direction: row;
     position: relative;
     height: 100%;
     float: left;
-    // border: 1px solid grey;
   }
   &:nth-child(even) {
     .img-container {
@@ -593,9 +599,12 @@ $counter: $items - $rows + 2;
     }
   }
   &:first-child {
+    .img-container {
+      width: 50%;
+    }
     img {
       position: relative;
-      height: 80%;
+      height: 76%;
       margin-left: -14px;
       margin-top: 30px;
     }
@@ -604,25 +613,46 @@ $counter: $items - $rows + 2;
     height: 100%;
   }
   img {
-    position: relative;
     height: 100%;
+    object-fit: contain;
     margin: 0 20px;
     filter: drop-shadow(0 5px 5px hsl(0, 0%, 38%));
   }
   .desc-container {
+    align-self: center;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 50%;
     padding: 20px 36px;
-    // border: 1px solid crimson;
+    margin-left: -34px;
     p {
       font-size: 24px;
       color: hsl(0, 0%, 32%);
-      //border: 1px solid green;
+      min-width: 500px;
+      @include mq-md {
+        font-size: 18px;
+        min-width: 400px;
+      }
+      @include mq-lg {
+        font-size: 24px;
+        color: hsl(0, 0%, 32%);
+        min-width: 500px;
+      }
+    }
+    @include mq-md {
+      //width: 30%;
+    }
+    @include mq-lg {
+      align-self: center;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      width: 50%;
+      padding: 20px 36px;
+      margin-left: -34px;
     }
     .title {
-      //font-weight: 600;
       color: hsl(205, 87%, 29%);
     }
     .desc-footer {
@@ -630,9 +660,7 @@ $counter: $items - $rows + 2;
       flex-direction: row;
       justify-content: space-between;
       height: 100%;
-      //border: 1px solid lightblue;
       a {
-        //border: 1px solid purple;
         text-decoration: none;
         align-self: center;
         font-size: 24px;
@@ -644,10 +672,28 @@ $counter: $items - $rows + 2;
         &:visited {
           color: hsl(360, 71%, 66%);
         }
+        @include mq-md {
+          min-width: 100px;
+          font-size: 16px;
+        }
+        @include mq-lg {
+          font-size: 24px;
+        }
       }
       p {
         color: hsl(0, 0%, 49%);
         font-size: 20px;
+        min-width: 0;
+        @include mq-md {
+          align-self: center;
+          font-size: 16px;
+          min-width: 300px;
+        }
+        @include mq-lg {
+          color: hsl(0, 0%, 49%);
+          font-size: 20px;
+          min-width: 400px;
+        }
       }
       .tech-title {
         font-size: 22px;

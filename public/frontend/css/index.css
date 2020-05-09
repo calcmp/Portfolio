@@ -227,7 +227,7 @@ body:before {
 }
 
 .main-container .skills {
-  margin-top: 120px;
+  margin-top: 80px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -278,7 +278,8 @@ body:before {
   z-index: 9;
 }
 
-.contact-form textarea {
+.contact-form textarea,
+.contact-form input {
   width: 100%;
   margin-bottom: 16px;
   background-color: #e0e0e0;
@@ -291,18 +292,15 @@ body:before {
           box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1), 0 2px 0 rgba(0, 0, 0, 0.15);
 }
 
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form input:focus {
   outline: none;
-}
-
-.contact-form #subject {
-  margin-top: -4px;
 }
 
 .contact-form #email,
 .contact-form #subject {
   font-size: 16px;
-  height: 30px;
+  height: 31px;
 }
 
 .contact-form #message {
@@ -326,8 +324,8 @@ body:before {
   font-size: 18px;
   color: white;
   outline: none;
-  -webkit-box-shadow: 0 2px 2px rbga(0, 0, 0, 0.1);
-          box-shadow: 0 2px 2px rbga(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 8px rbga(0, 0, 0, 0.1);
+          box-shadow: 0 3px 8px rbga(0, 0, 0, 0.1);
 }
 
 .contact-form #submit-btn:active {
@@ -673,7 +671,28 @@ body:before {
   width: 1400px;
 }
 
+@media (min-width: 768px) {
+  .project-card {
+    margin: 50px 70px 40px 70px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card {
+    position: relative;
+    display: block;
+    margin: 50px 70px 40px 70px;
+  }
+}
+
 .project-card .img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   position: relative;
   height: 100%;
   float: left;
@@ -683,9 +702,13 @@ body:before {
   float: right;
 }
 
+.project-card:first-child .img-container {
+  width: 50%;
+}
+
 .project-card:first-child img {
   position: relative;
-  height: 80%;
+  height: 76%;
   margin-left: -14px;
   margin-top: 30px;
 }
@@ -695,14 +718,17 @@ body:before {
 }
 
 .project-card img {
-  position: relative;
   height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin: 0 20px;
   -webkit-filter: drop-shadow(0 5px 5px #616161);
           filter: drop-shadow(0 5px 5px #616161);
 }
 
 .project-card .desc-container {
+  -ms-flex-item-align: center;
+      align-self: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,11 +739,46 @@ body:before {
   height: 100%;
   width: 50%;
   padding: 20px 36px;
+  margin-left: -34px;
 }
 
 .project-card .desc-container p {
   font-size: 24px;
   color: #525252;
+  min-width: 500px;
+}
+
+@media (min-width: 768px) {
+  .project-card .desc-container p {
+    font-size: 18px;
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card .desc-container p {
+    font-size: 24px;
+    color: #525252;
+    min-width: 500px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card .desc-container {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    width: 50%;
+    padding: 20px 36px;
+    margin-left: -34px;
+  }
 }
 
 .project-card .desc-container .title {
@@ -755,9 +816,41 @@ body:before {
   color: #e66b6b;
 }
 
+@media (min-width: 768px) {
+  .project-card .desc-container .desc-footer a {
+    min-width: 100px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card .desc-container .desc-footer a {
+    font-size: 24px;
+  }
+}
+
 .project-card .desc-container .desc-footer p {
   color: #7d7d7d;
   font-size: 20px;
+  min-width: 0;
+}
+
+@media (min-width: 768px) {
+  .project-card .desc-container .desc-footer p {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 16px;
+    min-width: 300px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card .desc-container .desc-footer p {
+    color: #7d7d7d;
+    font-size: 20px;
+    min-width: 400px;
+  }
 }
 
 .project-card .desc-container .desc-footer .tech-title {

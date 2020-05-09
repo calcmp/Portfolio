@@ -24,7 +24,12 @@
       <i class="fas fa-sticky-note"></i>
     </button>
     <section class="contact-form" id="contact-form">
-      <form id="contact-me" method="post" action="send">
+      <form
+        id="contact-me"
+        method="post"
+        action="send"
+        onSubmit="alert('Email sent.')"
+      >
         <button class="close-button" onclick="closeForm()">
           <i class="fas fa-compress-alt"></i>
         </button>
@@ -34,24 +39,20 @@
           id="subject"
           name="subject"
         ></textarea>
-        <textarea
+        <input
           required
+          type="email"
           placeholder="Email address..."
           id="email"
           name="email"
-        ></textarea>
+        ></input>
         <textarea
           required
           placeholder="Message..."
           id="message"
           name="message"
         ></textarea>
-        <input
-          id="submit-btn"
-          type="submit"
-          value="SUBMIT"
-          onclick="closeForm()"
-        />
+        <input id="submit-btn" type="submit" value="SUBMIT" />
       </form>
     </section>
 
