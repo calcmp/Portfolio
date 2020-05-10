@@ -464,6 +464,7 @@ body:before {
 .timeline-container {
   padding: 300px 0 10px 0;
   background: #f7f7f7;
+  margin-bottom: 100px;
 }
 
 @media (min-width: 768px) {
@@ -691,7 +692,7 @@ body:before {
   text-align: center;
   font-size: 48px;
   font-weight: 200;
-  margin: 180px 60px -100px 60px;
+  margin: 0px 60px -100px 60px;
 }
 
 .project-card {
