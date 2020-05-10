@@ -671,36 +671,57 @@ body:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .projects-container .proj-card-wrapper {
     margin: 60px auto;
   }
 }
 
-.project-card {
-  position: relative;
-  display: block;
-  height: 340px;
-  margin: 50px 70px 40px 70px;
-  max-width: 1400px;
-  width: 1400px;
+.projects-container h1 {
+  color: #3b3b3b;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 200;
+  margin: 180px 60px -100px 60px;
 }
 
-@media (min-width: 900px) {
+.project-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  margin: 40px 70px 10px 70px;
+  width: 80%;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+@media (min-width: 1060px) {
   .project-card {
+    height: 340px;
+    display: block;
     margin: 56px 70px 20px 70px;
   }
 }
 
 @media (min-width: 1200px) {
   .project-card {
+    height: 340px;
+    display: block;
     margin: 56px 70px 40px 70px;
   }
 }
@@ -714,15 +735,27 @@ body:before {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   float: left;
+}
+
+@media (min-width: 1060px) {
+  .project-card .img-container {
+    height: 100%;
+    margin-bottom: 0px;
+  }
 }
 
 .project-card:nth-child(even) .img-container {
   float: right;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card:first-child {
     margin-bottom: -50px;
   }
@@ -730,7 +763,7 @@ body:before {
 
 @media (min-width: 1200px) {
   .project-card:first-child {
-    margin: 50px 70px 70px 70px;
+    margin: 50px 70px 30px 70px;
   }
   .project-card:first-child .desc-container {
     margin-top: 40px;
@@ -738,31 +771,57 @@ body:before {
 }
 
 .project-card:first-child .img-container {
-  width: 50%;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 1060px) {
+  .project-card:first-child .img-container {
+    width: 50%;
+    margin-bottom: -150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card:first-child .img-container {
+    width: 50%;
+    margin-bottom: -150px;
+  }
 }
 
 .project-card:first-child img {
   position: relative;
-  height: 76%;
-  margin-left: -14px;
+  height: 60%;
   margin-top: 30px;
+  width: 100%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .project-card:first-child img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .project-card:first-child img {
+    margin-left: -14px;
     height: 60%;
     margin-top: -30px;
+    width: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .project-card:first-child img {
+    margin-left: -14px;
     margin-top: 30px;
     height: 76%;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card:first-child hr.solid {
     margin-top: -20px;
   }
@@ -770,15 +829,15 @@ body:before {
 
 @media (min-width: 1200px) {
   .project-card:first-child hr.solid {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 }
 
 .project-card.right img {
-  height: 100%;
+  height: 36%;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card.right img {
     height: 90%;
     -ms-flex-item-align: center;
@@ -794,7 +853,8 @@ body:before {
 }
 
 .project-card img {
-  height: 100%;
+  height: 36%;
+  width: 40%;
   -o-object-fit: contain;
      object-fit: contain;
   margin: 0 20px;
@@ -802,19 +862,27 @@ body:before {
           filter: drop-shadow(0 5px 5px #616161);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
+  .project-card img {
+    width: 26%;
+  }
+}
+
+@media (min-width: 1060px) {
   .project-card img {
     height: 90%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     margin: 0 10px;
+    width: initial;
   }
 }
 
 @media (min-width: 1200px) {
   .project-card img {
     height: 100%;
+    width: initial;
   }
 }
 
@@ -831,46 +899,16 @@ body:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 100%;
-  width: 50%;
+  width: 100%;
   padding: 20px 0;
-  margin-left: -34px;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card .desc-container {
     margin-left: -34px;
     padding: 30px 0;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card .desc-container {
-    margin-left: -24px;
-  }
-}
-
-.project-card .desc-container p {
-  font-size: 24px;
-  color: #525252;
-  min-width: 500px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-@media (min-width: 900px) {
-  .project-card .desc-container p {
-    font-size: 18px;
-    min-width: 300px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card .desc-container p {
-    font-size: 20px;
-    color: #525252;
-    min-width: 500px;
+    width: 50%;
+    height: 100%;
   }
 }
 
@@ -887,8 +925,34 @@ body:before {
             flex-direction: column;
     height: 100%;
     width: 50%;
-    padding: 20px 36px;
     margin-left: -34px;
+  }
+}
+
+.project-card .desc-container p {
+  font-size: 16px;
+  color: #525252;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media (min-width: 768px) {
+  .project-card .desc-container p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1060px) {
+  .project-card .desc-container p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card .desc-container p {
+    font-size: 20px;
+    color: #525252;
   }
 }
 
@@ -911,28 +975,12 @@ body:before {
   height: 100%;
 }
 
-@media (min-width: 900px) {
-  .project-card .desc-container .desc-footer {
-    -ms-flex-item-align: normal;
-        -ms-grid-row-align: normal;
-        align-self: normal;
-  }
-}
-
-@media (min-width: 1200px) {
-  .project-card .desc-container .desc-footer {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-  }
-}
-
 .project-card .desc-container .desc-footer a {
   text-decoration: none;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-size: 24px;
+  font-size: 16px;
   color: #2680c0;
 }
 
@@ -944,7 +992,7 @@ body:before {
   color: #e66b6b;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card .desc-container .desc-footer a {
     min-width: 100px;
     font-size: 16px;
@@ -959,11 +1007,11 @@ body:before {
 
 .project-card .desc-container .desc-footer p {
   color: #7d7d7d;
-  font-size: 20px;
+  font-size: 16px;
   min-width: 0;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card .desc-container .desc-footer p {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -977,16 +1025,15 @@ body:before {
   .project-card .desc-container .desc-footer p {
     color: #7d7d7d;
     font-size: 20px;
-    min-width: 400px;
   }
 }
 
 .project-card .desc-container .desc-footer .tech-title {
-  font-size: 22px;
+  font-size: 18px;
   color: #525252;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card .desc-container .desc-footer .tech-title {
     font-size: 18px;
   }
@@ -1009,7 +1056,7 @@ body:before {
   border-bottom: 1px solid #cfcfcf;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   .project-card hr.solid {
     margin-top: 40px;
   }
@@ -1021,7 +1068,7 @@ body:before {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1060px) {
   hr {
     margin-top: 50px;
   }
