@@ -26,12 +26,6 @@ font sizes
   }
 }
 
-@mixin mq-1100 {
-  @media (min-width: 1100px) {
-    @content;
-  }
-}
-
 @mixin mq-lg {
   @media (min-width: 1200px) {
     @content;
@@ -234,11 +228,18 @@ body:before {
     }
   }
   .skills {
-    margin-top: 80px;
+    margin-top: 190px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @include mq-md {
+      margin-top: 80px;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
     .tag {
       height: 30px;
       margin: 6px 4px;
@@ -410,8 +411,11 @@ $counter: $items - $rows + 2;
 }
 
 .timeline-container {
-  padding: 100px 0 10px 0;
+  padding: 300px 0 10px 0;
   background: hsl(0, 0%, 97%);
+  @include mq-md {
+    padding: 100px 0 10px 0;
+  }
   h1 {
     color: hsl(0, 0%, 23%);
     text-align: center;
@@ -586,10 +590,10 @@ $counter: $items - $rows + 2;
   max-width: 1400px;
   width: 1400px;
   @include mq-900 {
-    margin: 0px 70px 20px 70px;
+    margin: 56px 70px 20px 70px;
   }
   @include mq-lg {
-    margin: 50px 70px 40px 70px;
+    margin: 56px 70px 40px 70px;
   }
   .img-container {
     display: flex;
@@ -605,10 +609,13 @@ $counter: $items - $rows + 2;
   }
   &:first-child {
     @include mq-900 {
-      margin: 0px 70px 10px 70px;
+      margin-bottom: -50px;
     }
     @include mq-lg {
-      margin: 50px 70px 40px 70px;
+      margin: 50px 70px 70px 70px;
+      .desc-container {
+        margin-top: 40px;
+      }
     }
     .img-container {
       width: 50%;
@@ -627,11 +634,19 @@ $counter: $items - $rows + 2;
         height: 76%;
       }
     }
+    hr.solid {
+      @include mq-900 {
+        margin-top: -20px;
+      }
+      @include mq-lg {
+        margin-top: 50px;
+      }
+    }
   }
   &.right img {
     height: 100%;
     @include mq-900 {
-      height: 76%;
+      height: 90%;
       align-self: center;
     }
     @include mq-lg {
@@ -644,8 +659,9 @@ $counter: $items - $rows + 2;
     margin: 0 20px;
     filter: drop-shadow(0 5px 5px hsl(0, 0%, 38%));
     @include mq-900 {
-      height: 76%;
+      height: 90%;
       align-self: center;
+      margin: 0 10px;
     }
     @include mq-lg {
       height: 100%;
@@ -655,6 +671,7 @@ $counter: $items - $rows + 2;
     align-self: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 100%;
     width: 50%;
     padding: 20px 0;
@@ -676,7 +693,7 @@ $counter: $items - $rows + 2;
         min-width: 300px;
       }
       @include mq-lg {
-        font-size: 24px;
+        font-size: 20px;
         color: hsl(0, 0%, 32%);
         min-width: 500px;
       }
@@ -694,6 +711,7 @@ $counter: $items - $rows + 2;
       margin-left: -34px;
     }
     .title {
+      font-weight: 600;
       color: hsl(205, 87%, 29%);
     }
     .desc-footer {
@@ -766,11 +784,17 @@ $counter: $items - $rows + 2;
     float: left;
     border: none;
     border-bottom: 1px solid hsl(0, 0%, 81%);
+    @include mq-900 {
+      margin-top: 40px;
+    }
+    @include mq-lg {
+      margin-top: 50px;
+    }
   }
 }
 hr {
   @include mq-900 {
-    margin-top: 10px;
+    margin-top: 50px;
   }
   @include mq-lg {
     margin-top: 50px;

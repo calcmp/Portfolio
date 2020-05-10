@@ -228,7 +228,7 @@ body:before {
 }
 
 .main-container .skills {
-  margin-top: 80px;
+  margin-top: 190px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,6 +238,21 @@ body:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .main-container .skills {
+    margin-top: 80px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main-container .skills .tag {
@@ -447,8 +462,14 @@ body:before {
 }
 
 .timeline-container {
-  padding: 100px 0 10px 0;
+  padding: 300px 0 10px 0;
   background: #f7f7f7;
+}
+
+@media (min-width: 768px) {
+  .timeline-container {
+    padding: 100px 0 10px 0;
+  }
 }
 
 .timeline-container h1 {
@@ -674,13 +695,13 @@ body:before {
 
 @media (min-width: 900px) {
   .project-card {
-    margin: 0px 70px 20px 70px;
+    margin: 56px 70px 20px 70px;
   }
 }
 
 @media (min-width: 1200px) {
   .project-card {
-    margin: 50px 70px 40px 70px;
+    margin: 56px 70px 40px 70px;
   }
 }
 
@@ -703,13 +724,16 @@ body:before {
 
 @media (min-width: 900px) {
   .project-card:first-child {
-    margin: 0px 70px 10px 70px;
+    margin-bottom: -50px;
   }
 }
 
 @media (min-width: 1200px) {
   .project-card:first-child {
-    margin: 50px 70px 40px 70px;
+    margin: 50px 70px 70px 70px;
+  }
+  .project-card:first-child .desc-container {
+    margin-top: 40px;
   }
 }
 
@@ -738,13 +762,25 @@ body:before {
   }
 }
 
+@media (min-width: 900px) {
+  .project-card:first-child hr.solid {
+    margin-top: -20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card:first-child hr.solid {
+    margin-top: 50px;
+  }
+}
+
 .project-card.right img {
   height: 100%;
 }
 
 @media (min-width: 900px) {
   .project-card.right img {
-    height: 76%;
+    height: 90%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -768,10 +804,11 @@ body:before {
 
 @media (min-width: 900px) {
   .project-card img {
-    height: 76%;
+    height: 90%;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+    margin: 0 10px;
   }
 }
 
@@ -791,6 +828,9 @@ body:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 100%;
   width: 50%;
   padding: 20px 0;
@@ -828,7 +868,7 @@ body:before {
 
 @media (min-width: 1200px) {
   .project-card .desc-container p {
-    font-size: 24px;
+    font-size: 20px;
     color: #525252;
     min-width: 500px;
   }
@@ -853,6 +893,7 @@ body:before {
 }
 
 .project-card .desc-container .title {
+  font-weight: 600;
   color: #0a558a;
 }
 
@@ -969,8 +1010,20 @@ body:before {
 }
 
 @media (min-width: 900px) {
+  .project-card hr.solid {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-card hr.solid {
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 900px) {
   hr {
-    margin-top: 10px;
+    margin-top: 50px;
   }
 }
 
