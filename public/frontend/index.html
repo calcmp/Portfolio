@@ -21,48 +21,51 @@
   </head>
   <body>
     <button class="open-button" onclick="openForm()">
-      <i class="fas fa-sticky-note"></i>
+      <em class="fas fa-sticky-note"></em>
     </button>
     <section class="contact-form" id="contact-form">
       <form
-        id="contact-me"
+        id="contact-form__contact-me"
         method="post"
         action="send"
         onSubmit="alert('Email sent.')"
       >
-        <button class="close-button" onclick="closeForm()">
-          <i class="fas fa-compress-alt"></i>
+        <button class="contact-form__close-button" onclick="closeForm()">
+          <em class="fas fa-compress-alt"></em>
         </button>
+        <label for="contact-form__subject" title="Subject" style="display: none;">Subject</label>
         <textarea
           required
           placeholder="Subject..."
-          id="subject"
+          id="contact-form__subject"
           name="subject"
         ></textarea>
+        <label for="contact-form__email" title="Email" style="display: none;">Email</label>
         <input
           required
           type="email"
           placeholder="Email address..."
-          id="email"
+          id="contact-form__email"
           name="email"
-        ></input>
+        />
+        <label for="contact-form__message" title="Message" style="display: none;">Message</label>
         <textarea
           required
           placeholder="Message..."
-          id="message"
+          id="contact-form__message"
           name="message"
         ></textarea>
-        <input id="submit-btn" type="submit" value="SUBMIT" />
+        <input id="contact-form__submit-btn" type="submit" value="SUBMIT" />
       </form>
     </section>
 
     <section class="home-container">
-      <section class="welcome-header">
-        <h1 class="welcome-head">Hi, I'm Cal</h1>
+      <section class="home-container__welcome-header">
+        <h1 class="home-container__welcome-head">Hi, I'm Cal</h1>
       </section>
-      <section class="main-container">
-        <section class="welcome-para">
-          <p class="welcome-msg">
+      <section class="home-container__main-container">
+        <section class="home-container__welcome-para">
+          <p class="home-container__welcome-msg">
             I'm a Lancaster University Computer Science graduate. 
             I started coding at the age of 11, 
             making mods for an online game I loved at the time. 
@@ -73,77 +76,77 @@
             I've picked up many skills, learned multiple languages and created apps that are meaningful to me along the way. Get in touch!
           </p>
         </section>
-        <div class="welcome-btns-container">
+        <div class="home-container__welcome-btns-container">
           <button
-            id="proj-btn"
-            class="welcome-btn"
+            id="home-container__proj-btn"
+            class="home-container__welcome-btn"
             type="button"
             onclick="scrollToElement('projects'); resetColour();"
           >
             Projects
           </button>
           <button
-            id="rd-map-btn"
-            class="welcome-btn"
+            id="home-container__rd-map-btn"
+            class="home-container__welcome-btn"
             type="button"
             onclick="scrollToElement('timeline'); resetColour();"
           >
             My Journey
           </button>
         </div>
-        <div class="links-container">
+        <div class="home-container__links-container">
           <a
-            class="icon-link"
+            class="home-container__icon-link"
             href="https://www.linkedin.com/in/callum-penny-84883b176/"
             target="_blank"
-            ><i class="fab fa-linkedin-in"></i
+            ><em class="fab fa-linkedin-in"></em
           ></a>
-          <a class="icon-link" href="https://github.com/calcmp" target="_blank"
-            ><i class="fab fa-github"></i
+          <a class="home-container__icon-link" href="https://github.com/calcmp" target="_blank"
+            ><em class="fab fa-github"></em
           ></a>
           <a
-            class="icon-link"
+            class="home-container__icon-link"
             href="https://play.google.com/store/apps/developer?id=Callum+Penny&hl=en"
             target="_blank"
-            ><i class="fab fa-google-play"></i
+            ><em class="fab fa-google-play"></em
           ></a>
         </div>
-        <div class="cv-container">
+        <div class="home-container__cv-container">
           <a
-            class="cv-dl"
+            class="home-container__cv-dl"
             href="public/backend/assets/Callum-Penny-CV.pdf"
             download
             onclick="resetColour()"
           >
-            <i class="fas fa-download"></i>CV
+            <em class="fas fa-download"></em>CV
           </a>
         </div>
-        <section class="skills">
-          <div class="tag"><p>HTML</p></div>
-          <div class="tag"><p>CSS</p></div>
-          <div class="tag"><p>SCSS</p></div>
-          <div class="tag"><p>JavaScript</p></div>
-          <div class="tag"><p>NodeJS</p></div>
-          <div class="tag"><p>ReactJS</p></div>
-          <div class="tag"><p>React Native</p></div>
-          <div class="tag"><p>Redux</p></div>
-          <div class="tag"><p>ASP.NET</p></div>
-          <div class="tag"><p>C#</p></div>
-          <div class="tag"><p>Java</p></div>
-          <div class="tag"><p>SQL</p></div>
-          <div class="tag"><p>Git</p></div>
+        <section class="home-container__skills">
+          <div class="home-container__tag"><p>HTML</p></div>
+          <div class="home-container__tag"><p>CSS</p></div>
+          <div class="home-container__tag"><p>SCSS</p></div>
+          <div class="home-container__tag"><p>JavaScript</p></div>
+          <div class="home-container__tag"><p>NodeJS</p></div>
+          <div class="home-container__tag"><p>ReactJS</p></div>
+          <div class="home-container__tag"><p>React Native</p></div>
+          <div class="home-container__tag"><p>Redux</p></div>
+          <div class="home-container__tag"><p>ASP.NET</p></div>
+          <div class="home-container__tag"><p>C#</p></div>
+          <div class="home-container__tag"><p>Java</p></div>
+          <div class="home-container__tag"><p>SQL</p></div>
+          <div class="home-container__tag"><p>Git</p></div>
         </section>
       </section>
     </section>
 
     <section id="timeline" class="timeline-container">
       <h1>From University to Now</h1>
-      <div class="demo-card-wrapper">
-        <div class="demo-card demo-card--step1 fade-in">
-          <div class="head">
+      <div class="timeline__card-wrapper">
+        <div class="timeline__card timeline-card--step1 fade-in">
+          <div class="timeline__head">
             <h2><span class="small">HTML, CSS</span>Responsive Site</h2>
           </div>
-          <div class="body">
+          <div class="timeline__body">
             <p>
               Creating a responsive website related and adhering to accesibility
               standards was part of one of the modules during my university
@@ -154,16 +157,16 @@
               ><img
                 src="/public/frontend/assets/uni.PNG"
                 loading="lazy"
-                alt="Graphic"
+                alt="Responsive website displaying information about Lancaster University"
             /></a>
           </div>
         </div>
 
-        <div id="card2" class="demo-card demo-card--step2 fade-in">
-          <div class="head">
+        <div class="timeline__card timeline-card--step2 fade-in">
+          <div class="timeline__head">
             <h2><span class="small">ReactJS</span>TDEE Calculator</h2>
           </div>
-          <div class="body">
+          <div class="timeline__body">
             <p>
               Wanting to get my hands into a framework and fitness being
               important to me meant only one thing; it was time to create a TDEE
@@ -173,16 +176,16 @@
               ><img
                 src="/public/frontend/assets/tdee-reactjs.PNG"
                 loading="lazy"
-                alt="Graphic"
+                alt="TDEE Calculator web application"
             /></a>
           </div>
         </div>
 
-        <div class="demo-card demo-card--step3 fade-in">
-          <div class="head">
+        <div class="timeline__card timeline-card--step3 fade-in">
+          <div class="timeline__head">
             <h2><span class="small">React Native, Redux</span>Demoed</h2>
           </div>
-          <div class="body">
+          <div class="timeline__body">
             <p>
               The latest project, Demoed. An app targetted at musicians to
               record and share demos for their songs. The app makes use of Redux
@@ -194,7 +197,7 @@
               ><img
                 src="/public/frontend/assets/demoed.PNG"
                 loading="lazy"
-                alt="Graphic"
+                alt="Screenshots of demoed, a react native application"
             /></a>
           </div>
         </div>
@@ -203,29 +206,29 @@
 
     <section id="projects" class="projects-container">
       <h1>My Projects</h1>
-      <div class="proj-card-wrapper">
-        <div id="p-card1" class="project-card slide-in from-below">
-          <div class="img-container">
+      <div class="projects__card-wrapper">
+        <div id="p-card1" class="projects__card slide-in from-below">
+          <div class="projects__img-container">
             <img
               src="/public/frontend/assets/tdee-proj.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="TDEE Calculator web application"
             />
           </div>
-          <div class="desc-container">
+          <div class="projects__desc-container">
             <p>
               Fitness is important to me so naturally I decided to create
-              a <span class="title">TDEE Calculator</span> that is simple and intuitive to use.
+              a <span class="projects__title">TDEE Calculator</span> that is simple and intuitive to use.
               I wanted it to have multiple options depending on which measurement
               system you prefer, your goals, preferred diet, activity level and
               which forumla to use.
             </p>
-            <div class="desc-footer">
+            <div class="projects__desc-footer">
               <p>
-                <span class="tech-title">Tech://</span>
+                <span class="projects__tech-title">Tech://</span>
                 ReactJS, Tailwindcss
               </p>
-              <a href="https://tdee-calc.netlify.app/">
+              <a href="https://tdee-calc.netlify.app/" target="_blank">
                 view me
               </a>
             </div>
@@ -233,34 +236,35 @@
           <hr class="solid slide-in from-below" />
         </div>
 
-        <div id="p-card2" class="project-card slide-in from-below right">
-          <div class="img-container">
+        <div id="p-card2" class="projects__card slide-in from-below right">
+          <div class="projects__img-container">
             <img
               src="/public/frontend/assets/tdee-home.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="Screenshot of react native TDEE calculator home screen"
             />
             <img
               src="/public/frontend/assets/tdee-settings.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="Screenshot of react native TDEE calculator settings screen"
             />
           </div>
-          <div class="desc-container">
+          <div class="projects__desc-container">
             <p>
-              Wanting to port my <span class="title">TDEE Calculator</span> to mobile I began to dabble in 
+              Wanting to port my <span class="projects__title">TDEE Calculator</span> to mobile I began to dabble in 
               React Native and recreate the app there. Using better techniques
               and practices I managed to develop my first mobile app. I learned
               a lot about React Native mobile development along the way.
             </p>
-            <div class="desc-footer">
+            <div class="projects__desc-footer">
               <p>
-                <span class="tech-title">Tech://</span>
+                <span class="projects__tech-title">Tech://</span>
                 React Native, Expo
               </p>
               <a
                 href="https://play.google.com/store/apps/details?id=com.callumpenny.tdeecalculator"
-              >
+                target="_blank"
+                >
                 view me
               </a>
             </div>
@@ -268,22 +272,22 @@
           <hr class="solid slide-in from-below"/>
         </div>
 
-        <div id="p-card3" class="project-card slide-in from-below">
-          <div class="img-container">
+        <div id="p-card3" class="projects__card slide-in from-below">
+          <div class="projects__img-container">
             <img
               src="/public/frontend/assets/flashcard-home.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="Screenshot of flashcards home screen, a react native application"
             />
             <img
               src="/public/frontend/assets/flashcard-cards.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="Screenshot of flashcards cards screen, a react native application"
             />
           </div>
-          <div class="desc-container">
+          <div class="projects__desc-container">
             <p>
-              <span class="title">Flashcards</span>
+              <span class="projects__title">Flashcards</span>
               were extremely helpful for me at uni. 
               I ended up with 8+ decks of hundreds of cards stored on a tiny shelf. 
               It was a painful task to organise and use them due to the sheer amount. 
@@ -292,14 +296,15 @@
               I used the phones local storage and redux to manage the state of the
               app, it was an added challenge and a great way to learn about redux.
             </p>
-            <div class="desc-footer">
+            <div class="projects__desc-footer">
               <p>
-                <span class="tech-title">Tech://</span>
+                <span class="projects__tech-title">Tech://</span>
                 React Native, Redux, Expo
               </p>
               <a
                 href="https://play.google.com/store/apps/details?id=com.callumpenny.flashcard"
-              >
+                target="_blank"
+                >
                 view me
               </a>
             </div>
@@ -307,34 +312,34 @@
           <hr class="solid slide-in from-below" />
         </div>
 
-        <div id="p-card4" class="project-card slide-in from-below right">
-          <div class="img-container">
+        <div id="p-card4" class="projects__card slide-in from-below right">
+          <div class="projects__img-container">
             <img
               src="/public/frontend/assets/demoed-demo.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="Screenshots of demoed in demos screen, a react native application"
             />
             <img
               src="/public/frontend/assets/demoed-settings.PNG"
               loading="lazy"
-              alt="Graphic"
+              alt="Screenshots of demoed in settings screen, a react native application"
             />
           </div>
-          <div class="desc-container">
+          <div class="projects__desc-container">
             <p>
-              Wanting a bigger challenge, <span class="title">Demoed</span> was that.
+              Wanting a bigger challenge, <span class="projects__title">Demoed</span> was that.
               Demoed is for musicians to create and share recordings of demos of their music.
               Using the experience I gained about redux, it is incorporated into all aspects of demoed 
               to manage the state of each component and functionality.
               It has many features which include a fully functioning media player, record,
               rename, delete, add/remove tags, filtering based on tags, share recordings to other apps and more. 
             </p>
-            <div class="desc-footer">
+            <div class="projects__desc-footer">
               <p>
-                <span class="tech-title">Tech://</span>
+                <span class="projects__tech-title">Tech://</span>
                 React Native, Redux, Expo
               </p>
-              <a href="www.spanishinquisition.com">
+              <a href="https://play.google.com/store/apps/details?id=com.donefreshly.demoed&hl=en" target="_blank">
                 view me
               </a>
             </div>

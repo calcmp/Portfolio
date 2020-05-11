@@ -16,9 +16,6 @@ app.get("/", (req, res) => {
 
 app.post("/send", (req, res) => {
   const { email, subject, message } = req.body;
-  console.log(email);
-  console.log(subject);
-  console.log(message);
   try {
     sendMail(email, subject, message);
     res.redirect("/");
