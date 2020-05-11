@@ -198,7 +198,7 @@ body:before {
       text-decoration: none;
       display: inline-block;
       font-weight: 500;
-      padding: 15px 20px;
+      padding: 15px 18px;
       font-size: 20px;
       &:active {
         box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
@@ -210,6 +210,9 @@ body:before {
         outline: none;
         transition: 0.25s;
       }
+    }
+    .fa-download:before {
+      margin-right: 11px;
     }
   }
   .home-container__skills {
