@@ -50,15 +50,28 @@ body:before {
 /* Main Content */
 .home-container__main-container {
   margin: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
   /* Buttons */
 }
 
+@media (min-width: 768px) {
+  .home-container__main-container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 .home-container__main-container .home-container__welcome-msg {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: whitesmoke;
+}
+
+@media (min-width: 768px) {
+  .home-container__main-container .home-container__welcome-msg {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -69,7 +82,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__welcome-btns-container {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +92,12 @@ body:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .home-container__main-container .home-container__welcome-btns-container {
+    margin-top: 100px;
+  }
 }
 
 .home-container__main-container .home-container__welcome-btns-container button {
@@ -132,13 +151,19 @@ body:before {
 }
 
 .home-container__main-container .home-container__links-container {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .home-container__main-container .home-container__links-container {
+    margin-top: 100px;
+  }
 }
 
 .home-container__main-container .home-container__links-container .home-container__icon-link {
@@ -177,13 +202,19 @@ body:before {
 }
 
 .home-container__main-container .home-container__cv-container {
-  margin-top: 100px;
+  margin-top: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .home-container__main-container .home-container__cv-container {
+    margin-top: 100px;
+  }
 }
 
 .home-container__main-container .home-container__cv-container .home-container__cv-dl {
@@ -218,7 +249,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__skills {
-  margin-top: 200px;
+  margin-top: 100px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -273,15 +304,22 @@ body:before {
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   background-color: #f7f7f7;
   height: 446px;
-  width: 350px;
+  width: 260px;
   border-radius: 0px;
   padding: 34px 30px;
   margin-top: 100px;
   display: none;
   position: fixed;
   bottom: 18px;
-  right: 50px;
+  right: 48px;
   z-index: 9;
+}
+
+@media (min-width: 768px) {
+  .contact-form {
+    height: 446px;
+    width: 350px;
+  }
 }
 
 .contact-form textarea,
@@ -320,7 +358,7 @@ body:before {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background-color: #003e6b;
-  width: 350px;
+  width: 260px;
   margin-left: -30px;
   margin-top: 6px;
   height: 50px;
@@ -332,6 +370,12 @@ body:before {
   outline: none;
   -webkit-box-shadow: 0 3px 8px rbga(0, 0, 0, 0.1);
           box-shadow: 0 3px 8px rbga(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .contact-form #contact-form__submit-btn {
+    width: 350px;
+  }
 }
 
 .contact-form #contact-form__submit-btn:active {
@@ -452,7 +496,7 @@ body:before {
 }
 
 .timeline-container {
-  padding: 300px 0 10px 0;
+  padding: 200px 0 10px 0;
   background: #f7f7f7;
   margin-bottom: 100px;
 }
@@ -469,7 +513,7 @@ body:before {
   display: flex;
   text-align: center;
   color: white;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 200;
   margin: 0 0 100px 0;
   padding: 0 60px 0 60px;
@@ -481,6 +525,12 @@ body:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .timeline-container h1 {
+    font-size: 48px;
+  }
 }
 
 .timeline-container .timeline__card-wrapper {
@@ -661,8 +711,13 @@ body:before {
 }
 
 .projects-container {
-  padding: 200px 0;
   background: #f7f7f7;
+}
+
+@media (min-width: 768px) {
+  .projects-container {
+    padding: 200px 0;
+  }
 }
 
 .projects-container .projects__card-wrapper {
@@ -695,7 +750,7 @@ body:before {
   display: flex;
   text-align: center;
   color: white;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 200;
   padding: 0 60px 0 60px;
   background-color: #003e6b;
@@ -706,6 +761,12 @@ body:before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 768px) {
+  .projects-container h1 {
+    font-size: 48px;
+  }
 }
 
 .projects__card {
