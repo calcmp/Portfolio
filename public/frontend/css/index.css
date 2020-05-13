@@ -219,7 +219,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__cv-container .home-container__cv-dl {
-  background-color: #003e6b;
+  background-color: #0a558a;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
   color: white;
@@ -238,7 +238,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__cv-container .home-container__cv-dl:hover, .home-container__main-container .home-container__cv-container .home-container__cv-dl:focus {
-  background-color: #00538f;
+  background-color: #1a76b7;
   cursor: pointer;
   outline: none;
   -webkit-transition: 0.25s;
