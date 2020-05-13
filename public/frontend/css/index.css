@@ -36,7 +36,13 @@ body:before {
   padding: 10px;
   background: #f7f7f7;
   background-image: linear-gradient(6deg, #f7f7f7 calc(38% - 3px), #003e6b calc(38% - 2px));
-  margin-bottom: 100px;
+  margin-bottom: 400px;
+}
+
+@media (min-width: 768px) {
+  .home-container {
+    margin-bottom: 200px;
+  }
 }
 
 /* Header */
@@ -497,14 +503,14 @@ body:before {
 }
 
 .timeline-container {
-  padding: 300px 0 10px 0;
+  padding: 0px 0 10px 0;
   background: #f7f7f7;
   margin-bottom: 100px;
 }
 
 @media (min-width: 768px) {
   .timeline-container {
-    padding: 100px 0 10px 0;
+    padding: 0px 0 200px 0;
   }
 }
 
@@ -713,12 +719,6 @@ body:before {
 
 .projects-container {
   background: #f7f7f7;
-}
-
-@media (min-width: 768px) {
-  .projects-container {
-    padding: 200px 0;
-  }
 }
 
 .projects-container .projects__card-wrapper {

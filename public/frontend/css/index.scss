@@ -81,7 +81,10 @@ body:before {
     hsl(0, 0%, 97%) calc(38% - 3px),
     hsl(205, 100%, 21%) calc(38% - 2px)
   );
-  margin-bottom: 100px;
+  margin-bottom: 400px;
+  @include mq-md {
+    margin-bottom: 200px;
+  }
 }
 
 /* Header */
@@ -423,11 +426,11 @@ $counter: $items - $rows + 2;
 }
 
 .timeline-container {
-  padding: 300px 0 10px 0;
+  padding: 0px 0 10px 0;
   background: hsl(0, 0%, 97%);
   margin-bottom: 100px;
   @include mq-md {
-    padding: 100px 0 10px 0;
+    padding: 0px 0 200px 0;
   }
   h1 {
     display: flex;
@@ -589,9 +592,6 @@ $counter: $items - $rows + 2;
 
 .projects-container {
   background: hsl(0, 0%, 97%);
-  @include mq-md {
-    padding: 200px 0;
-  }
   .projects__card-wrapper {
     height: 100%;
     padding: 20px 51.5px 20px 51.5px;
