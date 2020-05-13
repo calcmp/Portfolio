@@ -108,7 +108,7 @@ body:before {
 
   /* Buttons */
   .home-container__welcome-btns-container {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -154,7 +154,7 @@ body:before {
     }
   }
   .home-container__links-container {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     .home-container__icon-link {
@@ -186,7 +186,7 @@ body:before {
     }
   }
   .home-container__cv-container {
-    margin-top: 80px;
+    margin-top: 100px;
     display: flex;
     justify-content: center;
     .home-container__cv-dl {
@@ -216,7 +216,7 @@ body:before {
     }
   }
   .home-container__skills {
-    margin-top: 190px;
+    margin-top: 200px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -406,11 +406,17 @@ $counter: $items - $rows + 2;
     padding: 100px 0 10px 0;
   }
   h1 {
-    color: hsl(0, 0%, 23%);
+    display: flex;
     text-align: center;
+    color: white;
     font-size: 48px;
     font-weight: 200;
-    margin: 0px 60px 100px 60px;
+    margin: 0 0 100px 0;
+    padding: 0 60px 0 60px;
+    background-color: hsl(205, 100%, 21%);
+    height: 140px;
+    justify-content: center;
+    align-items: center;
   }
   .timeline__card-wrapper {
     position: relative;
@@ -555,11 +561,11 @@ $counter: $items - $rows + 2;
 }
 
 .projects-container {
-  padding: 100px 0;
+  padding: 200px 0;
   background: hsl(0, 0%, 97%);
   .projects__card-wrapper {
     height: 100%;
-    padding: 100px 51.5px 20px 51.5px;
+    padding: 20px 51.5px 20px 51.5px;
     max-width: 1400px;
     margin: auto;
     background: hsl(0, 0%, 97%);
@@ -571,11 +577,16 @@ $counter: $items - $rows + 2;
     }
   }
   h1 {
-    color: hsl(0, 0%, 23%);
+    display: flex;
     text-align: center;
+    color: white;
     font-size: 48px;
     font-weight: 200;
-    margin: 0px 60px -100px 60px;
+    padding: 0 60px 0 60px;
+    background-color: hsl(205, 100%, 21%);
+    height: 140px;
+    justify-content: center;
+    align-items: center;
   }
 }
 .projects__card {
