@@ -115,7 +115,7 @@ body:before {
 
   /* Buttons */
   .home-container__welcome-btns-container {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +164,7 @@ body:before {
     }
   }
   .home-container__links-container {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     @include mq-md {
@@ -199,7 +199,7 @@ body:before {
     }
   }
   .home-container__cv-container {
-    margin-top: 80px;
+    margin-top: 60px;
     display: flex;
     justify-content: center;
     @include mq-md {
@@ -232,7 +232,7 @@ body:before {
     }
   }
   .home-container__skills {
-    margin-top: 100px;
+    margin-top: 160px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;

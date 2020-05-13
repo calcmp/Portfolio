@@ -82,7 +82,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__welcome-btns-container {
-  margin-top: 80px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,7 +151,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__links-container {
-  margin-top: 80px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +202,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__cv-container {
-  margin-top: 80px;
+  margin-top: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,7 +249,7 @@ body:before {
 }
 
 .home-container__main-container .home-container__skills {
-  margin-top: 100px;
+  margin-top: 160px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
