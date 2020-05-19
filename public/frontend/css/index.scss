@@ -656,58 +656,6 @@ $counter: $items - $rows + 2;
       justify-content: center;
     }
   }
-  &:first-child {
-    @include mq-1060 {
-      margin-bottom: -50px;
-    }
-    @include mq-lg {
-      margin: 50px 70px 30px 70px;
-      .projects__desc-container {
-        margin-top: 40px;
-      }
-    }
-    .projects__img-container {
-      width: 100%;
-      justify-content: center;
-      //margin-bottom: -150px;
-      @include mq-1060 {
-        width: 50%;
-        margin-bottom: -150px;
-      }
-      @include mq-lg {
-        width: 50%;
-        margin-bottom: -150px;
-      }
-    }
-    img {
-      position: relative;
-      height: 60%;
-      margin-top: 30px;
-      width: 100%;
-      @include mq-md {
-        width: 80%;
-      }
-      @include mq-1060 {
-        margin-left: -14px;
-        height: 60%;
-        margin-top: -30px;
-        width: 100%;
-      }
-      @include mq-lg {
-        margin-left: -14px;
-        margin-top: 30px;
-        height: 76%;
-      }
-    }
-    hr.solid {
-      @include mq-1060 {
-        margin-top: -20px;
-      }
-      @include mq-lg {
-        margin-top: 0px;
-      }
-    }
-  }
   &.right img {
     height: 36%;
     @include mq-1060 {
@@ -849,6 +797,59 @@ $counter: $items - $rows + 2;
     }
   }
 }
+.laptop {
+  @include mq-1060 {
+    margin-bottom: -50px;
+  }
+  @include mq-lg {
+    margin: 50px 70px 30px 70px;
+    .projects__desc-container {
+      margin-top: 40px;
+    }
+  }
+  .projects__img-container {
+    width: 100%;
+    justify-content: center;
+    //margin-bottom: -150px;
+    @include mq-1060 {
+      width: 50%;
+      margin-bottom: -150px;
+    }
+    @include mq-lg {
+      width: 50%;
+      margin-bottom: -150px;
+    }
+  }
+  img {
+    position: relative;
+    height: 60%;
+    margin-top: 30px;
+    width: 100%;
+    @include mq-md {
+      width: 80%;
+    }
+    @include mq-1060 {
+      margin-left: -14px;
+      height: 60%;
+      margin-top: -30px;
+      width: 100%;
+    }
+    @include mq-lg {
+      margin-left: -14px;
+      margin-top: 30px;
+      height: 76%;
+    }
+  }
+  hr.solid {
+    @include mq-1060 {
+      margin-top: -20px;
+    }
+    @include mq-lg {
+      margin-top: 0px;
+    }
+  }
+}
+
 hr {
   @include mq-1060 {
     margin-top: 50px;
