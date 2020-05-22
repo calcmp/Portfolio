@@ -483,6 +483,31 @@ $counter: $items - $rows + 2;
     img {
       border: 1px solid rgba(191, 191, 191, 0.4);
     }
+    .timeline__body {
+      &:before,
+      &:after {
+        top: 114%;
+        bottom: -79px;
+      }
+    }
+  }
+  &:nth-child(2) {
+    .timeline__body {
+      &:before,
+      &:after {
+        top: 110%;
+        bottom: -65px;
+      }
+    }
+  }
+  &:last-child {
+    .timeline__body {
+      &:before,
+      &:after {
+        top: 104%;
+        bottom: -45px;
+      }
+    }
   }
   @include mq-md {
     max-width: 50%;
@@ -562,9 +587,27 @@ $counter: $items - $rows + 2;
     border: 1px solid rgba(191, 191, 191, 0.4);
     border-top: 0;
     padding: 5px 15px 15px 15px;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
     @include mq-lg {
       height: 410px;
+    }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.35);
+      z-index: -1;
+    }
+    &:before {
+      background: lightblue;
+      left: 5px;
+      right: 45px;
+      transform: rotate(-3deg);
+    }
+    &:after {
+      background: pink;
+      left: 45px;
+      right: 5px;
+      transform: rotate(3deg);
     }
     p {
       font-size: 14px;
@@ -671,7 +714,7 @@ $counter: $items - $rows + 2;
     width: 40%;
     object-fit: contain;
     margin: 0 20px;
-    filter: drop-shadow(0 5px 5px hsl(0, 0%, 38%));
+    filter: drop-shadow(0 2px 5px hsl(0, 0%, 35%));
     @include mq-md {
       width: 26%;
     }
