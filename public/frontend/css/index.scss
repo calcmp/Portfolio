@@ -1,4 +1,10 @@
 /* Media Queries */
+@mixin mq-sm {
+  @media (min-width: 425px) {
+    @content;
+  }
+}
+
 @mixin mq-md {
   @media (min-width: 768px) {
     @content;
@@ -82,8 +88,11 @@ body:before {
     hsl(205, 100%, 21%) calc(38% - 2px)
   );
   margin-bottom: 400px;
+  @include mq-sm {
+    margin-bottom: 100px;
+  }
   @include mq-md {
-    margin-bottom: 200px;
+    margin-bottom: 50px;
   }
 }
 
@@ -430,7 +439,7 @@ $counter: $items - $rows + 2;
   background: hsl(0, 0%, 97%);
   margin-bottom: 100px;
   @include mq-md {
-    padding: 0px 0 200px 0;
+    padding: 0px 0 50px 0;
   }
   h1 {
     display: flex;
@@ -486,8 +495,15 @@ $counter: $items - $rows + 2;
     .timeline__body {
       &:before,
       &:after {
-        top: 114%;
-        bottom: -79px;
+        top: 90%;
+        bottom: 16px;
+      }
+      @include mq-lg {
+        &:before,
+        &:after {
+          top: 114%;
+          bottom: -79px;
+        }
       }
     }
   }
@@ -495,8 +511,15 @@ $counter: $items - $rows + 2;
     .timeline__body {
       &:before,
       &:after {
-        top: 110%;
-        bottom: -65px;
+        top: 90%;
+        bottom: 16px;
+      }
+      @include mq-lg {
+        &:before,
+        &:after {
+          top: 110%;
+          bottom: -65px;
+        }
       }
     }
   }
@@ -504,8 +527,15 @@ $counter: $items - $rows + 2;
     .timeline__body {
       &:before,
       &:after {
-        top: 104%;
-        bottom: -45px;
+        top: 90%;
+        bottom: 16px;
+      }
+      @include mq-lg {
+        &:before,
+        &:after {
+          top: 104%;
+          bottom: -45px;
+        }
       }
     }
   }
