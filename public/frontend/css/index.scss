@@ -279,24 +279,27 @@ body:before {
   border-left: 4px solid hsl(205, 82%, 33%);
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   background-color: hsl(0, 0%, 97%);
-  height: 446px;
-  width: 260px;
+  height: 100%;
+  width: 100%;
   border-radius: 0px;
-  padding: 34px 30px;
+  padding: 69px 30px 0;
   margin-top: 100px;
   display: none;
   position: fixed;
-  bottom: 18px;
-  right: 48px;
+  bottom: 0;
+  right: 0;
   z-index: 9;
   @include mq-md {
+    padding: 34px 30px;
     height: 446px;
     width: 350px;
+    bottom: 60px;
+    right: 48px;
   }
   textarea,
   input {
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
     background-color: hsl(0, 0%, 88%);
     border: none;
     border-radius: 0px;
@@ -307,6 +310,9 @@ body:before {
     &:focus {
       outline: none;
     }
+    @include mq-md {
+      margin-bottom: 16px;
+    }
   }
   #contact-form__email,
   #contact-form__subject {
@@ -315,27 +321,32 @@ body:before {
   }
   #contact-form__message {
     font-size: 16px;
-    height: 240px;
+    height: 500px;
+    @include mq-md {
+      height: 240px;
+    }
   }
   #contact-form__submit-btn {
-    position: relative;
+    position: absolute;
     border: none;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
     background-color: hsl(205, 100%, 21%);
-    width: 260px;
-    margin-left: -30px;
+    width: 100%;
     margin-top: 6px;
     height: 50px;
-    left: -4px;
-    bottom: 0;
+    left: 0;
+    bottom: -40px;
     font-weight: 500;
     font-size: 18px;
     color: white;
     outline: none;
     box-shadow: 0 3px 8px rbga(0, 0, 0, 0.1);
     @include mq-md {
+      position: relative;
       width: 350px;
+      left: -4px;
+      margin-left: -30px;
     }
     &:active {
       box-shadow: 0 0px 0px hsla(0, 0%, 0%, 0);
@@ -380,13 +391,17 @@ body:before {
   border: none;
   position: relative;
   float: right;
-  margin-top: -46px;
-  margin-right: -40px;
+  margin-top: -56px;
+  margin-right: -26px;
   font-size: 20px;
   cursor: pointer;
   p {
     color: white;
     margin-top: -2px;
+  }
+  @include mq-md {
+    margin-top: -46px;
+    margin-right: -40px;
   }
 }
 

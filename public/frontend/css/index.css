@@ -316,29 +316,32 @@ body:before {
   -webkit-box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
           box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
   background-color: #f7f7f7;
-  height: 446px;
-  width: 260px;
+  height: 100%;
+  width: 100%;
   border-radius: 0px;
-  padding: 34px 30px;
+  padding: 69px 30px 0;
   margin-top: 100px;
   display: none;
   position: fixed;
-  bottom: 18px;
-  right: 48px;
+  bottom: 0;
+  right: 0;
   z-index: 9;
 }
 
 @media (min-width: 768px) {
   .contact-form {
+    padding: 34px 30px;
     height: 446px;
     width: 350px;
+    bottom: 60px;
+    right: 48px;
   }
 }
 
 .contact-form textarea,
 .contact-form input {
   width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 40px;
   background-color: #e0e0e0;
   border: none;
   border-radius: 0px;
@@ -354,6 +357,13 @@ body:before {
   outline: none;
 }
 
+@media (min-width: 768px) {
+  .contact-form textarea,
+  .contact-form input {
+    margin-bottom: 16px;
+  }
+}
+
 .contact-form #contact-form__email,
 .contact-form #contact-form__subject {
   font-size: 16px;
@@ -362,21 +372,26 @@ body:before {
 
 .contact-form #contact-form__message {
   font-size: 16px;
-  height: 240px;
+  height: 500px;
+}
+
+@media (min-width: 768px) {
+  .contact-form #contact-form__message {
+    height: 240px;
+  }
 }
 
 .contact-form #contact-form__submit-btn {
-  position: relative;
+  position: absolute;
   border: none;
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
   background-color: #003e6b;
-  width: 260px;
-  margin-left: -30px;
+  width: 100%;
   margin-top: 6px;
   height: 50px;
-  left: -4px;
-  bottom: 0;
+  left: 0;
+  bottom: -40px;
   font-weight: 500;
   font-size: 18px;
   color: white;
@@ -387,7 +402,10 @@ body:before {
 
 @media (min-width: 768px) {
   .contact-form #contact-form__submit-btn {
+    position: relative;
     width: 350px;
+    left: -4px;
+    margin-left: -30px;
   }
 }
 
@@ -438,8 +456,8 @@ body:before {
   border: none;
   position: relative;
   float: right;
-  margin-top: -46px;
-  margin-right: -40px;
+  margin-top: -56px;
+  margin-right: -26px;
   font-size: 20px;
   cursor: pointer;
 }
@@ -447,6 +465,13 @@ body:before {
 .contact-form__close-button p {
   color: white;
   margin-top: -2px;
+}
+
+@media (min-width: 768px) {
+  .contact-form__close-button {
+    margin-top: -46px;
+    margin-right: -40px;
+  }
 }
 
 /* My Journey */
